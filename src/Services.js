@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import {
   ArrowLeft, Layout, Server, Smartphone,
   CheckCircle, Globe, Clock, Cpu, ArrowRight,
-  BarChart, Zap, Search, TrendingUp, Shield
+  BarChart, Zap, Search, TrendingUp, Shield, AlertCircle
 } from 'lucide-react';
 
 const Services = () => {
@@ -172,6 +172,156 @@ const Services = () => {
               <p className="text-gray-500 text-sm">
                 Need more pages? No problem — page count and features can be upgraded at any point.
               </p>
+            </div>
+          </section>
+
+          {/* --- BUILDER vs WORDPRESS vs CUSTOM (2026 GUIDE) --- */}
+          <section className="mb-20">
+            <div className="flex items-center mb-8">
+              <Globe className="w-8 h-8 text-blue-400 mr-3" />
+              <h2 className="text-3xl font-bold text-white">Builder vs WordPress vs Custom Code</h2>
+            </div>
+
+            <p className="text-gray-300 max-w-5xl mb-8">
+              Not every website should be built the same way. The right choice depends on your goals, how often you update content,
+              and whether you need advanced features (logins, ecommerce flows, custom integrations, multi-location SEO, etc.).
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {/* Builder */}
+              <div className="bg-gray-900/60 border border-gray-800 rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Website Builder</h3>
+                <p className="text-sm text-gray-400 mb-4">Wix / Squarespace / Webflow (best for simple sites)</p>
+                <div className="text-2xl font-bold text-blue-400 mb-4">$500 – $3,000 build</div>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-blue-500 mr-2 shrink-0" /> Fast launch + easy editing</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-blue-500 mr-2 shrink-0" /> Great for brochure sites + portfolios</li>
+                  <li className="flex items-start"><AlertCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Migration later is painful (limited export)</li>
+                  <li className="flex items-start"><AlertCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Paid add-ons often required ($5–$50/mo)</li>
+                </ul>
+                <div className="text-xs text-gray-500 mt-4">
+                  Typical platform cost: $16–$159/mo depending on features and ecommerce.
+                </div>
+              </div>
+
+              {/* WordPress */}
+              <div className="bg-gray-900/60 border border-gray-800 rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-white mb-2">WordPress (CMS)</h3>
+                <p className="text-sm text-gray-400 mb-4">Best when you want a powerful editor + plugins</p>
+                <div className="text-2xl font-bold text-purple-400 mb-4">$2,500 – $20,000+</div>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Flexible + widely supported</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Great for SEO + content marketing</li>
+                  <li className="flex items-start"><AlertCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Plugin conflicts + update risk</li>
+                  <li className="flex items-start"><AlertCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Needs ongoing security + backups</li>
+                </ul>
+                <div className="text-xs text-gray-500 mt-4">
+                  Typical costs: premium theme ($60) + plugins ($200+/yr) + hosting ($10–$50+/mo).
+                </div>
+              </div>
+
+              {/* Custom */}
+              <div className="bg-gray-900/60 border border-gray-800 rounded-2xl p-6">
+                <h3 className="text-xl font-bold text-white mb-2">Custom Code</h3>
+                <p className="text-sm text-gray-400 mb-4">React / Next.js / Node / APIs (maximum performance)</p>
+                <div className="text-2xl font-bold text-green-400 mb-4">$5,000 – $150,000+</div>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-green-500 mr-2 shrink-0" /> Best speed + scalability</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-green-500 mr-2 shrink-0" /> Custom workflows + integrations</li>
+                  <li className="flex items-start"><AlertCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Hosting/setup is more technical</li>
+                  <li className="flex items-start"><AlertCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Requires structured handoff/support</li>
+                </ul>
+                <div className="text-xs text-gray-500 mt-4">
+                  Hosting ranges from $10–$50/mo (simple) to $500+/mo (high traffic / dedicated cloud).
+                </div>
+              </div>
+            </div>
+
+            {/* Business Tier Reference */}
+            <div className="mt-8 bg-gray-900/40 border border-gray-800 rounded-2xl p-6">
+              <h3 className="text-xl font-bold text-white mb-2">Business Tier Reference (2026)</h3>
+              <p className="text-gray-400 text-sm mb-4">These ranges include design + build, but exclude third-party licensing/hosting.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                <div className="bg-black/30 border border-gray-800 rounded-xl p-4">
+                  <div className="font-bold text-white">Small Business</div>
+                  <div className="text-gray-400">5–10 pages</div>
+                  <div className="text-blue-400 font-semibold mt-2">$2,500 – $8,000</div>
+                  <div className="text-gray-500 text-xs mt-1">2–6 weeks</div>
+                </div>
+                <div className="bg-black/30 border border-gray-800 rounded-xl p-4">
+                  <div className="font-bold text-white">Medium Business</div>
+                  <div className="text-gray-400">20–50 pages / ecommerce</div>
+                  <div className="text-blue-400 font-semibold mt-2">$15,000 – $50,000</div>
+                  <div className="text-gray-500 text-xs mt-1">6–12 weeks</div>
+                </div>
+                <div className="bg-black/30 border border-gray-800 rounded-xl p-4">
+                  <div className="font-bold text-white">Large Business</div>
+                  <div className="text-gray-400">custom app / portal</div>
+                  <div className="text-blue-400 font-semibold mt-2">$50,000 – $150,000</div>
+                  <div className="text-gray-500 text-xs mt-1">3–6 months</div>
+                </div>
+                <div className="bg-black/30 border border-gray-800 rounded-xl p-4">
+                  <div className="font-bold text-white">Enterprise</div>
+                  <div className="text-gray-400">global / compliance</div>
+                  <div className="text-blue-400 font-semibold mt-2">$150,000 – $500,000+</div>
+                  <div className="text-gray-500 text-xs mt-1">6–12+ months</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* --- GA4 / GTM ANALYTICS PACKAGES --- */}
+          <section className="mb-20">
+            <div className="flex items-center mb-8">
+              <BarChart className="w-8 h-8 text-yellow-500 mr-3" />
+              <h2 className="text-3xl font-bold text-white">Google Analytics & Tag Manager</h2>
+            </div>
+
+            <p className="text-gray-300 max-w-5xl mb-8">
+              Analytics is not “install and forget.” The real value is tracking the actions that make money: calls, forms, bookings,
+              purchases, and lead quality. I can implement GA4 + GTM with clean event tracking, documentation, and verification.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-yellow-500/60 transition-all flex flex-col">
+                <h3 className="text-xl font-bold text-white mb-1">Basic GA4 Install</h3>
+                <p className="text-gray-400 text-sm mb-4">Tracking + verification</p>
+                <div className="text-3xl font-bold text-yellow-500 mb-4">$300 – $500</div>
+                <ul className="space-y-2 text-sm text-gray-300 flex-grow">
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> GA4 property setup</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Install via gtag or platform tool</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Realtime validation</li>
+                </ul>
+                <Link to="/quote" state={{ pkg: "GA4 Basic Setup" }} className="w-full mt-6 block py-2 rounded-lg border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center transition-all">Request Setup</Link>
+              </div>
+
+              <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-yellow-500/60 transition-all flex flex-col">
+                <h3 className="text-xl font-bold text-white mb-1">GTM + Event Tracking</h3>
+                <p className="text-gray-400 text-sm mb-4">Clicks, forms, scroll, video</p>
+                <div className="text-3xl font-bold text-yellow-500 mb-4">$1,000 – $2,500</div>
+                <ul className="space-y-2 text-sm text-gray-300 flex-grow">
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> GTM container setup</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Custom events + conversions</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Documentation + test plan</li>
+                </ul>
+                <Link to="/quote" state={{ pkg: "GA4 + GTM Event Tracking" }} className="w-full mt-6 block py-2 rounded-lg bg-yellow-500/10 border border-yellow-500 text-yellow-400 hover:bg-yellow-500 hover:text-black text-center transition-all">Request Tracking</Link>
+              </div>
+
+              <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-yellow-500/60 transition-all flex flex-col">
+                <h3 className="text-xl font-bold text-white mb-1">Ecommerce Tracking</h3>
+                <p className="text-gray-400 text-sm mb-4">Add to cart, checkout, revenue</p>
+                <div className="text-3xl font-bold text-yellow-500 mb-4">$2,000 – $5,000+</div>
+                <ul className="space-y-2 text-sm text-gray-300 flex-grow">
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Data layer mapping</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Revenue accuracy checks</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-yellow-500 mr-2 shrink-0" /> Cross-domain basics (if needed)</li>
+                </ul>
+                <Link to="/quote" state={{ pkg: "Ecommerce GA4 + GTM" }} className="w-full mt-6 block py-2 rounded-lg border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center transition-all">Request Ecommerce Setup</Link>
+              </div>
+            </div>
+
+            <div className="mt-6 text-xs text-gray-500 max-w-5xl">
+              Note: server-side tagging, BigQuery exports, advanced consent/CMP integrations, and multi-domain attribution are quoted separately.
             </div>
           </section>
 
@@ -377,41 +527,71 @@ const Services = () => {
               <h2 className="text-3xl font-bold text-white">Hosting & Maintenance</h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Standard Hosting */}
+            <p className="text-gray-300 max-w-5xl mb-8">
+              If I’m hosting your website, hosting is billed monthly. Choose the level of support you want based on traffic,
+              security needs, and how hands-off you want the site to be.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Hosting-only (Barebones) */}
               <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-green-500/50 transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-white">Standard Plan</h3>
-                    <p className="text-gray-400">Personal & Small Business</p>
+                    <h3 className="text-2xl font-bold text-white">Hosting-Only</h3>
+                    <p className="text-gray-400">Barebones (No edits included)</p>
                   </div>
-                  <div className="text-3xl font-bold text-green-400">$25–$50<span className="text-lg text-gray-500">/mo</span></div>
+                  <div className="text-3xl font-bold text-green-400">
+                    $25–$50<span className="text-lg text-gray-500">/mo</span>
+                  </div>
                 </div>
                 <div className="h-px bg-gray-800 my-6"></div>
                 <ul className="space-y-3">
-                  <li className="flex items-center text-gray-300"><Globe className="w-4 h-4 mr-3 text-green-500" /> High-performance hosting</li>
-                  <li className="flex items-center text-gray-300"><Shield className="w-4 h-4 mr-3 text-green-500" /> SSL security certificate</li>
-                  <li className="flex items-center text-gray-300"><Clock className="w-4 h-4 mr-3 text-green-500" /> Weekly automated backups</li>
-                  <li className="flex items-center text-gray-300"><CheckCircle className="w-4 h-4 mr-3 text-green-500" /> Technical maintenance</li>
+                  <li className="flex items-center text-gray-300"><Globe className="w-4 h-4 mr-3 text-green-500" /> Hosting + SSL (HTTPS)</li>
+                  <li className="flex items-center text-gray-300"><CheckCircle className="w-4 h-4 mr-3 text-green-500" /> Basic uptime monitoring</li>
+                  <li className="flex items-center text-gray-300"><Clock className="w-4 h-4 mr-3 text-green-500" /> Reliable performance for low-traffic sites</li>
+                  <li className="flex items-center text-gray-300"><Shield className="w-4 h-4 mr-3 text-green-500" /> No updates or content edits included</li>
                 </ul>
               </div>
 
-              {/* Premium Hosting */}
+              {/* Hosting + Maintenance (Recommended) */}
               <div className="bg-gray-900/50 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-500 transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-white">Premium Plan</h3>
-                    <p className="text-gray-400">High Traffic & Business Critical</p>
+                    <h3 className="text-2xl font-bold text-white">Hosting + Maintenance</h3>
+                    <p className="text-gray-400">Recommended for most businesses</p>
                   </div>
-                  <div className="text-3xl font-bold text-purple-400">$50–$150<span className="text-lg text-gray-500">/mo</span></div>
+                  <div className="text-3xl font-bold text-purple-400">
+                    $99–$299<span className="text-lg text-gray-500">/mo</span>
+                  </div>
                 </div>
                 <div className="h-px bg-gray-800 my-6"></div>
                 <ul className="space-y-3">
-                  <li className="flex items-center text-gray-300"><Globe className="w-4 h-4 mr-3 text-purple-500" /> Priority performance</li>
-                  <li className="flex items-center text-gray-300"><Clock className="w-4 h-4 mr-3 text-purple-500" /> Daily off-site backups</li>
-                  <li className="flex items-center text-gray-300"><CheckCircle className="w-4 h-4 mr-3 text-purple-500" /> Uptime monitoring</li>
-                  <li className="flex items-center text-gray-300"><CheckCircle className="w-4 h-4 mr-3 text-purple-500" /> Monthly health reports</li>
-                  <li className="flex items-center text-gray-300"><CheckCircle className="w-4 h-4 mr-3 text-purple-500" /> Broken link scanning</li>
+                  <li className="flex items-center text-gray-300"><Globe className="w-4 h-4 mr-3 text-purple-500" /> Hosting + SSL included</li>
+                  <li className="flex items-center text-gray-300"><Clock className="w-4 h-4 mr-3 text-purple-500" /> Off-site backups</li>
+                  <li className="flex items-center text-gray-300"><CheckCircle className="w-4 h-4 mr-3 text-purple-500" /> Updates (WordPress/plugins/themes where applicable)</li>
+                  <li className="flex items-center text-gray-300"><Shield className="w-4 h-4 mr-3 text-purple-500" /> Security monitoring + basic hardening</li>
+                  <li className="flex items-center text-gray-300"><Zap className="w-4 h-4 mr-3 text-purple-500" /> Small fixes included (within scope)</li>
+                </ul>
+              </div>
+
+              {/* Business Managed Hosting */}
+              <div className="bg-gray-900/50 p-8 rounded-2xl border border-blue-500/30 hover:border-blue-500 transition-all">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white">Business Managed Hosting</h3>
+                    <p className="text-gray-400">High traffic & mission-critical</p>
+                  </div>
+                  <div className="text-3xl font-bold text-blue-400">
+                    $300–$2,000+<span className="text-lg text-gray-500">/mo</span>
+                  </div>
+                </div>
+                <div className="h-px bg-gray-800 my-6"></div>
+                <ul className="space-y-3">
+                  <li className="flex items-center text-gray-300"><Server className="w-4 h-4 mr-3 text-blue-500" /> Staging environment (safe testing)</li>
+                  <li className="flex items-center text-gray-300"><TrendingUp className="w-4 h-4 mr-3 text-blue-500" /> Performance tuning (speed + stability)</li>
+                  <li className="flex items-center text-gray-300"><CheckCircle className="w-4 h-4 mr-3 text-blue-500" /> Priority fixes & support</li>
+                  <li className="flex items-center text-gray-300"><Shield className="w-4 h-4 mr-3 text-blue-500" /> Proactive monitoring + security hardening</li>
+                  <li className="flex items-center text-gray-300"><Clock className="w-4 h-4 mr-3 text-blue-500" /> SLA response times (plan-based)</li>
                 </ul>
               </div>
             </div>
@@ -420,8 +600,8 @@ const Services = () => {
               <div className="bg-gray-900/40 border border-gray-800 rounded-2xl p-5">
                 <h4 className="text-white font-bold mb-2">What’s the difference between hosting vs maintenance?</h4>
                 <ul className="list-disc pl-5 space-y-1 text-sm text-gray-300">
-                  <li><strong>Hosting</strong> keeps your site online (server, SSL, backups, uptime).</li>
-                  <li><strong>Maintenance</strong> covers technical updates, small fixes, and performance monitoring.</li>
+                  <li><strong>Hosting</strong> keeps your site online (server, SSL, uptime).</li>
+                  <li><strong>Maintenance</strong> covers technical updates, small fixes, and monitoring.</li>
                   <li><strong>Content changes</strong> (new copy, images, pages) are either included in a maintenance plan or billed hourly depending on scope.</li>
                 </ul>
               </div>
@@ -507,7 +687,10 @@ const Services = () => {
                 <h4 className="text-xl font-bold text-white mb-2">Hourly Updates</h4>
                 <p className="text-pink-400 font-bold mb-1">$50 / hour</p>
                 <p className="text-gray-400 text-sm mb-6">
-                  For content updates, design tweaks, or technical support outside of maintenance packages.
+                  For content updates, design tweaks, and small site changes outside of a monthly plan.
+                  <span className="text-gray-500 block mt-2 text-xs">
+                    Note: advanced debugging, urgent fixes, or complex technical work may require a higher hourly rate.
+                  </span>
                 </p>
                 <Link
                   to="/pay"

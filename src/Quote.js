@@ -185,6 +185,14 @@ const Quote = () => {
       newErrors.ack_third_party = 'Please acknowledge third-party costs.';
     }
 
+    if (!formData.get('ack_content_freeze')) {
+      newErrors.ack_content_freeze = 'Please acknowledge the content/timeline policy.';
+    }
+
+    if (!formData.get('ack_rush_fee')) {
+      newErrors.ack_rush_fee = 'Please acknowledge that rush timelines may require a rush fee.';
+    }
+
     setErrors(newErrors);
 
     // If errors exist, scroll to the first one
@@ -537,6 +545,18 @@ const Quote = () => {
                   <span className="text-sm text-gray-300">I understand that hosting, domains, or API fees are the client's responsibility. *</span>
                 </label>
                 {errors.ack_third_party && <p className="text-red-400 text-xs ml-7">{errors.ack_third_party}</p>}
+
+                <label className="flex items-start cursor-pointer group">
+                  <input type="checkbox" name="ack_content_freeze" onChange={handleInputChange} className="mt-1 mr-3 h-4 w-4 accent-purple-500" />
+                  <span className="text-sm text-gray-300">I understand that delays in content or approvals can pause the project and shift the timeline. *</span>
+                </label>
+                {errors.ack_content_freeze && <p className="text-red-400 text-xs ml-7">{errors.ack_content_freeze}</p>}
+
+                <label className="flex items-start cursor-pointer group">
+                  <input type="checkbox" name="ack_rush_fee" onChange={handleInputChange} className="mt-1 mr-3 h-4 w-4 accent-purple-500" />
+                  <span className="text-sm text-gray-300">I understand that rush timelines may require an additional rush fee. *</span>
+                </label>
+                {errors.ack_rush_fee && <p className="text-red-400 text-xs ml-7">{errors.ack_rush_fee}</p>}
               </div>
 
               <button 
