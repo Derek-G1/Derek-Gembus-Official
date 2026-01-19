@@ -16,7 +16,7 @@ import Process from './Process';
 import ErrorBoundary from './components/ErrorBoundary';
 import reportWebVitals from './reportWebVitals';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -26,6 +26,10 @@ root.render(
     <BrowserRouter>
       <ErrorBoundary>
         <Routes>
+
+          {/* ✅ Fix Soft 404 / duplicate URL: /index.html -> / */}
+          <Route path="/index.html" element={<Navigate to="/" replace />} />
+
           <Route path="/" element={<App />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/services" element={<Services />} />
@@ -48,4 +52,5 @@ root.render(
 );
 
 reportWebVitals();
+
 
