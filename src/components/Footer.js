@@ -44,6 +44,16 @@ const Footer = () => {
               Process
             </Link>
 
+            {/* ✅ NEW LINK ADDED HERE */}
+            <span className="hidden sm:inline text-gray-700">|</span>
+
+            <Link
+              to="/forms"
+              className="text-sm text-gray-500 hover:text-purple-400 transition-colors"
+            >
+              Forms
+            </Link>
+
             <span className="hidden sm:inline text-gray-700">|</span>
 
             <Link
