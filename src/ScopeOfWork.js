@@ -461,6 +461,8 @@ export default function ScopeOfWork() {
                         <option value="" disabled>
                           Select one…
                         </option>
+                        <option>Website Development</option>
+                        <option>Website Redesign</option>
                         <option>Lead generation</option>
                         <option>Product / service sales</option>
                         <option>Internal tooling</option>
