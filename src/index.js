@@ -12,6 +12,8 @@ import NotFound from './NotFound';
 
 import SiteTerms from './SiteTerms';
 import Process from './Process';
+import ScopeOfWork from './ScopeOfWork';
+import Discovery from './Discovery';
 
 import ErrorBoundary from './components/ErrorBoundary';
 import reportWebVitals from './reportWebVitals';
@@ -34,6 +36,8 @@ root.render(
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/services" element={<Services />} />
           <Route path="/quote" element={<Quote />} />
+          <Route path="/discovery" element={<Discovery />} />
+          <Route path="/scope-of-work" element={<ScopeOfWork />} />
           <Route path="/pay" element={<Payment />} />
 
           {/* Project Terms & Process */}
