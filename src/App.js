@@ -275,6 +275,13 @@ const App = () => {
         "I consistently recognized Derek as a dedicated, reliable, and highly capable member of our team. He was responsible for critical back-end data processes, developing and maintaining systems that handled complex client data. What stood out was his methodical approach to problem-solving and his strong technical aptitude. Even when faced with challenging technical issues, Derek approached them with a calm, analytical mindset. His commitment to ensuring data integrity and optimizing workflows was evident and greatly valued."
     },
     {
+      name: "Danimal Clown",
+      role: "Owner at Danimal Clown Entertainment LLC",
+      date: "January 20, 2026",
+      content:
+        "I have worked with Derek for a number of years now. His professionalism, knowledge and insight has been very helpful! He's very responsive if I have questions or concerns about my website he built for me! He did a fantastic job on my website and I would highly recommend using him if you need one built."
+    },
+    {
       name: "Jakob Kelly",
       role: "Owner at Au Jus LLC",
       date: "October 2024",
