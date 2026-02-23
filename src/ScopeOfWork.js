@@ -493,6 +493,14 @@ export default function ScopeOfWork() {
                       "Dashboards / reporting",
                       "Workflow automation",
                       "API integrations",
+                      "Social media foundation setup (no posting)",
+                      "Meta Business Suite / Business Manager setup",
+                      "Link-in-bio hub / custom link hub",
+                      "Canva Brand Kit + reusable templates",
+                      "Google Business Profile setup/cleanup",
+                      "Apple Business Connect + Bing Places listings",
+                      "Quarterly presence tune-up (no posting)",
+                      "Team training session",
                       "Ongoing maintenance",
                     ].map((label) => (
                       <CheckRow

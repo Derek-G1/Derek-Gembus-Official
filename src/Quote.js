@@ -74,6 +74,12 @@ const Quote = () => {
       return 'Tell me about your business. Do you have a design style in mind? What are the main sections you need (e.g. About, Services, Gallery)?';
     }
 
+
+    // Social Media Foundation Setup (No Posting)
+    if (selectedPackage.includes('Social Media Foundation') || selectedPackage.includes('Presence Tune-Up') || selectedPackage.includes('Social Media Setup')) {
+      return "Which platforms do you want set up (IG/FB/TikTok/LinkedIn/YouTube)? Do accounts already exist? Who should be the owner/admin? Do you have a business email + logo/brand colors? Do you want a Linktree/Beacons hub or a custom link hub on your domain?";
+    }
+
     // Mobile App
     if (selectedPackage.includes('Mobile App')) {
       return "What is the core function of the app? Do you need it for iOS, Android, or both? Do users need to log in? (e.g. 'I need a fitness tracking app where users can save workouts')";
@@ -527,6 +533,15 @@ const Quote = () => {
                             <option value="4-Page Website">4-Page Website ($2,000)</option>
                             <option value="5-Page Website">5-Page Website ($2,500)</option>
                             <option value="Custom Project">Custom Project / App</option>
+                          </optgroup>
+
+
+                          <optgroup label="Social Media Foundation Setup (No Posting)">
+                            <option value="Social Media Foundation - Foundation">Foundation Setup ($300–$600)</option>
+                            <option value="Social Media Foundation - Pro Foundation">Pro Foundation ($800–$1,500)</option>
+                            <option value="Social Media Foundation - Authority Setup">Authority Setup ($1,500–$3,500)</option>
+                            <option value="Quarterly Presence Tune-Up">Quarterly Presence Tune-Up (no posting)</option>
+                            <option value="Social Media Training Session">1-hour Training Session</option>
                           </optgroup>
 
                           <optgroup label="Mobile App Development">

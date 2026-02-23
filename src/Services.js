@@ -6,7 +6,8 @@ import Footer from './components/Footer';
 import {
   ArrowLeft, Layout, Server, Smartphone,
   CheckCircle, Globe, Clock, Cpu, ArrowRight,
-  BarChart, Zap, Search, TrendingUp, Shield, AlertCircle
+  BarChart, Zap, Search, TrendingUp, Shield, AlertCircle,
+  Share2, Link2, Lock, FileDown
 } from 'lucide-react';
 
 const Services = () => {
@@ -14,8 +15,8 @@ const Services = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     setPageMeta({
-      title: 'Website Design & Development Services | Derek Gembus',
-      description: 'Custom-coded websites, hosting, analytics dashboards, and custom software solutions. Transparent pricing with upgrades available.',
+      title: 'Services & Pricing | Derek Gembus',
+      description: 'Website design & development, analytics, automation, and social media foundation setup (no posting). Transparent pricing with upgrades available.',
       canonicalPath: '/services'
     });
   }, []);
@@ -41,15 +42,14 @@ const Services = () => {
         <div className="max-w-7xl mx-auto">
           {/* UPDATED H1 FOR SEO */}
           <h1 className="text-5xl font-bold mb-6 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            Website Design & Development Services
+            Services & Pricing
           </h1>
 
           <p className="text-xl text-gray-300 text-center mb-6 max-w-4xl mx-auto">
-            I build modern, high-performance websites and custom software that look great and work flawlessly on every device.
-            Most projects are <strong>custom-coded</strong> by default for speed and flexibility. WordPress is available if you prefer a CMS workflow.
+            I build modern, high-performance websites, analytics systems, and <span className="text-white font-semibold">done-right business foundations</span> (like social media + local listings setup) that help you look legit and convert.
           </p>
           <p className="text-gray-400 text-center mb-16 max-w-4xl mx-auto">
-            Pricing scales based on <strong>number of pages</strong>, integrations, and overall complexity — you can start with a smaller package and upgrade over time.
+            Pricing scales based on scope and complexity — you can start lean and upgrade over time.
           </p>
 
           {/* --- WEB DEVELOPMENT PACKAGES --- */}
@@ -174,6 +174,140 @@ const Services = () => {
               </p>
             </div>
           </section>
+
+
+          {/* --- SOCIAL MEDIA FOUNDATION SETUP (NO POSTING) --- */}
+          <section className="mb-20">
+            <div className="flex items-center mb-8">
+              <Share2 className="w-8 h-8 text-purple-400 mr-3" />
+              <h2 className="text-3xl font-bold text-white">Social Media Foundation Setup (No Posting)</h2>
+            </div>
+
+            <div className="bg-gray-900/40 border border-gray-800 rounded-2xl p-6 mb-8">
+              <p className="text-gray-300">
+                Starting from zero? I set up your social accounts <span className="text-white font-semibold">correctly and securely</span> — ownership, bios, links, permissions, and 2FA — so you look legit and stay in control.
+                <span className="text-white font-semibold"> No ongoing posting or content creation.</span>
+              </p>
+
+              <div className="mt-4 flex flex-col sm:flex-row gap-3">
+                <a
+                  href="/docs/social-media-foundation-setup-menu.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center px-5 py-2 rounded-lg border border-purple-500 text-purple-300 hover:bg-purple-500 hover:text-white transition-all"
+                >
+                  <FileDown className="w-4 h-4 mr-2" />
+                  Download 1-Page PDF Menu
+                </a>
+
+                <Link
+                  to="/quote"
+                  state={{ pkg: "Social Media Foundation - Pro Foundation", note: "Interested in Social Media Foundation Setup (no posting). Platforms: ______. Do accounts already exist? ______." }}
+                  className="inline-flex items-center justify-center px-5 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-all"
+                >
+                  Request a Quote <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Foundation */}
+              <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-purple-500 transition-all flex flex-col">
+                <h3 className="text-xl font-bold text-white mb-1">Foundation</h3>
+                <p className="text-gray-400 text-sm mb-4">Starter setup (no posting)</p>
+                <div className="text-3xl font-bold text-purple-400 mb-4">$300 – $600</div>
+                <ul className="space-y-2 text-sm text-gray-300 flex-grow">
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> 1–2 platforms (IG/FB/TikTok/LinkedIn)</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Bio + category + contact info optimized</li>
+                  <li className="flex items-start"><Lock className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Ownership + admin roles verified</li>
+                  <li className="flex items-start"><Shield className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> 2FA + recovery hardening</li>
+                  <li className="flex items-start"><Link2 className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Basic link-in-bio hub (calls / directions / website)</li>
+                </ul>
+                <Link
+                  to="/quote"
+                  state={{ pkg: "Social Media Foundation - Foundation" }}
+                  className="w-full mt-6 block py-2 rounded-lg border border-purple-500 text-purple-300 hover:bg-purple-500 hover:text-white text-center transition-all"
+                >
+                  Get Started
+                </Link>
+              </div>
+
+              {/* Pro Foundation */}
+              <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 border border-purple-500 shadow-xl flex flex-col relative">
+                <div className="absolute top-0 right-0 bg-purple-600 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">BEST VALUE</div>
+                <h3 className="text-xl font-bold text-white mb-1">Pro Foundation</h3>
+                <p className="text-gray-400 text-sm mb-4">Fully wired foundation</p>
+                <div className="text-3xl font-bold text-purple-400 mb-4">$800 – $1,500</div>
+                <ul className="space-y-2 text-sm text-gray-300 flex-grow">
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> 3–4 platforms + consistent naming</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0"/> Meta Business Suite wired correctly (roles + permissions)</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Canva Brand Kit setup</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> 8–12 reusable templates (promo, hours, reviews, events)</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> 30-day post plan outline (ideas only)</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Loom walkthrough + handoff checklist</li>
+                </ul>
+                <Link
+                  to="/quote"
+                  state={{ pkg: "Social Media Foundation - Pro Foundation" }}
+                  className="w-full mt-6 block py-2 rounded-lg bg-purple-600 hover:bg-purple-700 text-white text-center font-bold transition-all"
+                >
+                  Request Setup
+                </Link>
+              </div>
+
+              {/* Authority Setup */}
+              <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-purple-500 transition-all flex flex-col">
+                <h3 className="text-xl font-bold text-white mb-1">Authority Setup</h3>
+                <p className="text-gray-400 text-sm mb-4">Measurement + local presence</p>
+                <div className="text-3xl font-bold text-purple-400 mb-4">$1,500 – $3,500</div>
+                <ul className="space-y-2 text-sm text-gray-300 flex-grow">
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Everything in Pro Foundation</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Custom link hub on your domain</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> UTMs + QR code tracking (optional)</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Optional: Google/Apple/Bing listings setup</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Competitor scan + positioning notes</li>
+                </ul>
+                <Link
+                  to="/quote"
+                  state={{ pkg: "Social Media Foundation - Authority Setup" }}
+                  className="w-full mt-6 block py-2 rounded-lg border border-purple-500 text-purple-300 hover:bg-purple-500 hover:text-white text-center transition-all"
+                >
+                  Get Started
+                </Link>
+              </div>
+            </div>
+
+            <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800">
+                <h3 className="text-xl font-bold text-white mb-3">Foundation checklist</h3>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li className="flex items-start"><Lock className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Ownership + admin roles verified (no lockouts)</li>
+                  <li className="flex items-start"><Shield className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Security hardening (2FA + recovery)</li>
+                  <li className="flex items-start"><Link2 className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Link-in-bio hub wired for calls, directions, bookings</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Bio + keywords + service area + contact info</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Templates + brand kit (Pro+)</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Handoff video + quick-start checklist</li>
+                </ul>
+              </div>
+
+              <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800">
+                <h3 className="text-xl font-bold text-white mb-3">Popular add-ons (no posting)</h3>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Google Business Profile setup/cleanup</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Apple Business Connect + Bing Places listings</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Custom link hub on your domain + UTMs + QR</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Meta Pixel + conversions wiring (if relevant)</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> Quarterly Presence Tune-Up (links, access, insights)</li>
+                  <li className="flex items-start"><CheckCircle className="w-4 h-4 text-purple-500 mr-2 shrink-0" /> 1-hour team training (posting + insights + security)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-6 text-xs text-gray-500 max-w-5xl">
+              Note: verification badges are not guaranteed. This service focuses on correct ownership, security, and a clean foundation so your business can grow safely.
+            </div>
+          </section>
+
 
           {/* --- BUILDER vs WORDPRESS vs CUSTOM (2026 GUIDE) --- */}
           <section className="mb-20">
