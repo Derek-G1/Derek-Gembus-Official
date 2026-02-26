@@ -200,6 +200,14 @@ const App = () => {
 
   const projects = [
     {
+      title: "Spotlight Cleveland (Spotlight CLE)",
+      description:
+        "Modern, mobile-first client website with Events, Gallery, and Menu pages, plus Open Graph metadata and GA4 analytics via GTM.",
+      tags: ["React", "Vite", "Tailwind", "GA4", "GTM", "Client Work"],
+      icon: Layout,
+      url: "https://spotlightcle.com"
+    },
+    {
       title: "Block Guard",
       description:
         "Powerful Android call & message management app with intelligent filtering and DND modes.",
@@ -239,14 +247,6 @@ const App = () => {
       tags: ["Lua", "OBS Studio", "Automation"],
       icon: FileCode2,
       url: "https://github.com/Derek-G1/Hide-Map-in-Rust-Game-"
-    },
-    {
-      title: "Sweet Chin Music Ohio",
-      description:
-        "Website for a popular cover band with event calendar and booking capabilities.",
-      tags: ["Web Dev", "Events"],
-      icon: Music,
-      url: "https://www.sweetchinmusicohio.com"
     },
     {
       title: "Au Jus Cleveland",
