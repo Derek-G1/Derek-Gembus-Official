@@ -180,6 +180,9 @@ const Footer = () => {
 
           </div>
 
+          <p className="mt-2 text-sm text-gray-500 w-full text-center">
+            Based in Cleveland, Ohio
+          </p>
           <p className="mt-8 text-sm text-gray-600">
             © {currentYear} Derek Gembus | Software Developer, Data Engineer, Web Developer & Website Designer. All rights reserved.
           </p>

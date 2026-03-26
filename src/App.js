@@ -110,7 +110,7 @@ const App = () => {
   const experience = [
     {
       title: "Freelance Software Developer",
-      company: "Sole Proprietorship",
+      company: "Sole Proprietorship, Cleveland, Ohio",
       period: "Feb 2022 - Present",
       description:
         "Delivering custom digital solutions spanning full-stack web development and specialized game modification.",
@@ -123,7 +123,7 @@ const App = () => {
     },
     {
       title: "Programmer Analyst / Data Engineer",
-      company: "Marketing Communication Resource, Inc",
+      company: "Marketing Communication Resource, Inc., Willoughby, Ohio",
       period: "Apr 2022 - Apr 2024",
       description:
         "Transformed raw client data into actionable marketing insights for non-profits and commercial enterprises.",
@@ -138,7 +138,7 @@ const App = () => {
 
   const education = [
     {
-      school: "Cuyahoga Community College",
+      school: "Cuyahoga Community College, Cleveland, Ohio",
       program: "Certificate, Computer Software Engineering",
       period: "Oct 2021 - Dec 2021",
       details:
@@ -200,7 +200,7 @@ const App = () => {
 
   const projects = [
     {
-      title: "Spotlight Cleveland (Spotlight CLE)",
+      title: "Spotlight Cleveland (Spotlight CLE), Cleveland, Ohio",
       description:
         "Modern, mobile-first client website with Events, Gallery, and Menu pages, plus Open Graph metadata and GA4 analytics via GTM.",
       tags: ["React", "Vite", "Tailwind", "GA4", "GTM", "Client Work"],
@@ -251,7 +251,7 @@ const App = () => {
     {
       title: "Au Jus Cleveland",
       description:
-        "Restaurant website with online ordering integration for Chicago-style Italian beef.",
+        "Restaurant website in Parma, Ohio with online ordering integration for Chicago-style Italian beef.",
       tags: ["Web Dev", "E-commerce"],
       icon: Utensils,
       url: "https://www.aujus-cle.com"
@@ -269,7 +269,7 @@ const App = () => {
   const testimonials = [
     {
       name: "James Tomaro",
-      role: "Manager at Marketing Communication Resource, Inc.",
+      role: "Manager at Marketing Communication Resource, Inc., Willoughby, Ohio",
       date: "April 2024",
       content:
         "I consistently recognized Derek as a dedicated, reliable, and highly capable member of our team. He was responsible for critical back-end data processes, developing and maintaining systems that handled complex client data. What stood out was his methodical approach to problem-solving and his strong technical aptitude. Even when faced with challenging technical issues, Derek approached them with a calm, analytical mindset. His commitment to ensuring data integrity and optimizing workflows was evident and greatly valued."
@@ -283,10 +283,10 @@ const App = () => {
     },
     {
       name: "Jakob Kelly",
-      role: "Owner at Au Jus LLC",
+      role: "Owner at Au Jus LLC, Parma, Ohio",
       date: "October 2024",
       content:
-        "In 2022, I was launching a new restaurant in the Cleveland area and needed a high-quality, custom website. I hired Derek to design and build this critical piece of my business infrastructure. Throughout the entire project, Derek was a true professional. The website Derek delivered not only looks fantastic but also functions flawlessly under high volume. It has been a cornerstone of my business's success and has directly contributed to an increase in our revenue through online orders."
+        "In 2022, I was launching a new restaurant in the Cleveland, Ohio area and needed a high-quality, custom website. I hired Derek to design and build this critical piece of my business infrastructure. Throughout the entire project, Derek was a true professional. The website Derek delivered not only looks fantastic but also functions flawlessly under high volume. It has been a cornerstone of my business's success and has directly contributed to an increase in our revenue through online orders."
     }
   ];
 
@@ -316,7 +316,7 @@ const App = () => {
                 Derek Gembus
               </span>
               <span className="block text-3xl mt-4 text-gray-300">
-                Software Developer, Data Engineer & Web Developer
+                Software Developer, Data Engineer & Web Developer based in Cleveland, Ohio
               </span>
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -369,7 +369,7 @@ const App = () => {
                   With Google specializations in Data Analytics, IT Automation, and IT Support, alongside Microsoft Technology Associate certifications,
                   I combine deep technical knowledge with practical problem-solving skills. Whether I'm building custom full-stack web solutions,
                   developing privacy-focused mobile applications, reverse-engineering game code, or engineering data pipelines for marketing insights,
-                  I excel at delivering efficient, user-friendly results.
+                  I excel at delivering efficient, user-friendly results for clients in Cleveland and across Ohio.
                 </p>
               </div>
             </div>
