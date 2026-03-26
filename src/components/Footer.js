@@ -105,11 +105,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://paypal.me/DerekGembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
-                  PayPal
-                </a>
-              </li>
-              <li>
                 <a href="https://x.com/DerekGembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   X
                 </a>
