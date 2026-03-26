@@ -4,6 +4,7 @@ import './index.css';
 
 import App from './App';
 import PrivacyPolicy from './PrivacyPolicy';
+import CookiePolicy from './CookiePolicy';
 import Payment from './Payment';
 import Services from './Services';
 import Quote from './Quote';
@@ -35,6 +36,7 @@ root.render(
 
           <Route path="/" element={<App />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/services" element={<Services />} />
           <Route path="/quote" element={<Quote />} />
           

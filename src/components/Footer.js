@@ -144,6 +144,12 @@ const Footer = () => {
 
             <span className="hidden sm:inline text-gray-700">|</span>
 
+            <Link to="/cookie-policy" className="text-sm text-gray-500 hover:text-purple-400 transition-colors">
+              Cookie Policy
+            </Link>
+
+            <span className="hidden sm:inline text-gray-700">|</span>
+
             <Link to="/terms" className="text-sm text-gray-500 hover:text-purple-400 transition-colors">
               Terms & Process
             </Link>
