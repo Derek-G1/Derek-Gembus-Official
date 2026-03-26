@@ -41,7 +41,7 @@ const Services = () => {
 
         <div className="max-w-7xl mx-auto">
           {/* UPDATED H1 FOR SEO */}
-          <h1 className="text-5xl font-bold mb-6 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold mb-6 md:mb-10 text-center leading-snug md:leading-relaxed bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Services & Pricing
           </h1>
 

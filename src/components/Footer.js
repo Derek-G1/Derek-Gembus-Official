@@ -9,12 +9,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         
         {/* NEW 3-COLUMN EXTERNAL LINKS GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 pb-10 border-b border-gray-800 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 pb-10 border-b border-gray-800 text-center items-center justify-items-center">
           
           {/* Column 1: Code & Community */}
-          <div>
+          <div className="flex flex-col items-center justify-center w-full">
             <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Code & Community</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-center w-full">
               <li>
                 <a href="https://github.com/Derek-G1" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   GitHub
@@ -44,9 +44,9 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Professional & Freelance */}
-          <div>
+          <div className="flex flex-col items-center justify-center w-full">
             <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Professional & Freelance</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-center w-full">
               <li>
                 <a href="https://www.linkedin.com/in/derekgembus/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   LinkedIn
@@ -91,9 +91,9 @@ const Footer = () => {
           </div>
 
           {/* Column 3: Gigs & Support */}
-          <div>
+          <div className="flex flex-col items-center justify-center w-full">
             <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Gigs & Support</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-center w-full">
               <li>
                 <a href="https://www.fiverr.com/sellers/derekg2" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   Fiverr
@@ -136,7 +136,7 @@ const Footer = () => {
 
         {/* EXISTING INTERNAL SITE LINKS & COPYRIGHT */}
         <div className="text-center">
-          <div className="pt-2 flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-6">
+          <div className="pt-2 flex flex-wrap justify-center items-center gap-3 text-center sm:flex-row sm:space-y-0 sm:space-x-6">
             
             <Link to="/privacy" className="text-sm text-gray-500 hover:text-purple-400 transition-colors">
               Privacy Policy

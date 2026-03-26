@@ -1,20 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { DollarSign, Menu, X } from 'lucide-react';
 
 const Navbar = ({ isHome = false }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navRef = useRef(null);
 
   useEffect(() => {
     if (!isHome) return;
 
+    const heroElement = document.getElementById('home-hero');
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 20;
-      setScrolled(isScrolled);
+      if (!heroElement) return;
+      const navHeight = navRef.current?.offsetHeight || 0;
+      const heroBottom = heroElement.getBoundingClientRect().bottom;
+      setScrolled(heroBottom <= navHeight + 4);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isHome]);
 
@@ -41,8 +46,9 @@ const Navbar = ({ isHome = false }) => {
     };
   }, [mobileMenuOpen]);
 
-  const navClass = isHome 
-    ? `fixed w-full z-50 transition-all duration-300 ${scrolled || mobileMenuOpen ? 'bg-black/95 backdrop-blur-md' : 'bg-transparent'}`
+  const homeScrolled = scrolled || mobileMenuOpen;
+  const navClass = isHome
+    ? `fixed w-full z-50 transition-all duration-300 ${homeScrolled ? 'bg-black/95 backdrop-blur-md border-b border-gray-800' : 'bg-transparent'}`
     : 'fixed w-full z-50 bg-black/95 backdrop-blur-md border-b border-gray-800';
 
   const navLinks = [
@@ -55,7 +61,7 @@ const Navbar = ({ isHome = false }) => {
 ];
 
   return (
-    <nav className={navClass} role="navigation" aria-label="Main navigation">
+    <nav ref={navRef} className={navClass} role="navigation" aria-label="Main navigation">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link 

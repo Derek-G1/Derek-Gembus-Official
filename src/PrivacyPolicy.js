@@ -26,6 +26,15 @@ const PrivacyPolicy = () => {
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
           </Link>
+          <div className="mb-6 bg-gray-900/40 border border-gray-800 rounded-2xl p-4 text-sm text-gray-300">
+            <h2 className="text-xs uppercase tracking-wide text-gray-400 mb-3">Related pages</h2>
+            <div className="flex flex-wrap gap-3 text-sm">
+              <span className="text-sm text-gray-500">Privacy Policy</span>
+              <Link to="/cookie-policy" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Cookie Policy</Link>
+              <Link to="/terms" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Terms & Process</Link>
+              <Link to="/site-terms" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Website Terms</Link>
+            </div>
+          </div>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Privacy Policy

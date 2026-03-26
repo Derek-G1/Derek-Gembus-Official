@@ -47,6 +47,16 @@ const Terms = () => {
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home
           </Link>
+          <div className="mb-6 bg-gray-900/40 border border-gray-800 rounded-2xl p-4 text-sm text-gray-300">
+            <h2 className="text-xs uppercase tracking-wide text-gray-400 mb-3">Related pages</h2>
+            <div className="flex flex-wrap gap-3 text-sm">
+              <Link to="/privacy" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Privacy Policy</Link>
+              <Link to="/cookie-policy" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Cookie Policy</Link>
+              <span className="text-sm text-gray-500">Terms & Process</span>
+              <Link to="/site-terms" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Website Terms</Link>
+              <Link to="/process" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Process</Link>
+            </div>
+          </div>
 
           {/* Header */}
           <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -442,17 +452,6 @@ const Terms = () => {
               </ul>
             </section>
 
-            {/* Footer note */}
-            <div className="mt-8 text-xs text-gray-500">
-              Website usage terms? See{" "}
-              <Link
-                to="/site-terms"
-                className="text-purple-400 hover:text-purple-300"
-              >
-                Website Terms of Service
-              </Link>
-              .
-            </div>
           </div>
         </div>
       </div>

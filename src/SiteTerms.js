@@ -43,6 +43,16 @@ const SiteTerms = () => {
             <ArrowLeft className="w-5 h-5 mr-2" />
             Back to Home
           </Link>
+          <div className="mb-6 bg-gray-900/40 border border-gray-800 rounded-2xl p-4 text-sm text-gray-300">
+            <h2 className="text-xs uppercase tracking-wide text-gray-400 mb-3">Related pages</h2>
+            <div className="flex flex-wrap gap-3 text-sm">
+              <Link to="/privacy" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Privacy Policy</Link>
+              <Link to="/cookie-policy" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Cookie Policy</Link>
+              <Link to="/terms" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Terms & Process</Link>
+              <span className="text-sm text-gray-500">Website Terms</span>
+              <Link to="/process" className="text-sm text-purple-400 hover:text-purple-300 transition-colors">Process</Link>
+            </div>
+          </div>
 
           <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Website Terms of Service
@@ -202,13 +212,6 @@ const SiteTerms = () => {
             </section>
           </div>
 
-          <div className="mt-10 text-sm text-gray-500">
-            Looking for client/project rules? See{" "}
-            <Link to="/terms" className="text-purple-400 hover:text-purple-300">
-              Project Terms & Process
-            </Link>
-            .
-          </div>
         </div>
       </div>
 

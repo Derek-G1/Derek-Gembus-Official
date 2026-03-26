@@ -303,7 +303,7 @@ const App = () => {
       <Navbar isHome={true} />
 
       {/* Hero Section */}
-      <header className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <header id="home-hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-black to-purple-900">
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(76,29,149,0.3),rgba(0,0,0,0))]"></div>
@@ -542,7 +542,7 @@ const App = () => {
           <div className="container mx-auto px-4">
             <h2
               id="projects-heading"
-              className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+              className="text-4xl font-bold mb-12 md:mb-14 text-center leading-tight md:leading-snug bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
             >
               Recent Projects
             </h2>
