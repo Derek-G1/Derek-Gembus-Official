@@ -36,8 +36,8 @@ export function setPageMeta({ title, description, canonicalPath } = {}) {
         link.setAttribute('rel', 'canonical');
         document.head.appendChild(link);
       }
-      const origin = window.location?.origin || '';
-      link.setAttribute('href', `${origin}${canonicalPath}`);
+      const canonicalOrigin = 'https://derekgembus.com';
+      link.setAttribute('href', `${canonicalOrigin}${canonicalPath}`);
     }
   } catch (e) {
     // No-op: avoid breaking render in restrictive environments.

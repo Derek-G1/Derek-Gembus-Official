@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.derekgembus.com/sitemap.xml
+Sitemap: https://derekgembus.com/sitemap.xml

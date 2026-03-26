@@ -21,14 +21,23 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                {/* Note: Paste your full Stack Overflow profile URL here */}
-                <a href="https://stackoverflow.com/users/3249918..." target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                <a href="https://stackoverflow.com/users/32499186/derek-gembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   Stack Overflow
                 </a>
               </li>
               <li>
                 <a href="https://medium.com/@derekgembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   Medium
+                </a>
+              </li>
+              <li>
+                <a href="https://peerlist.io/derekgembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  Peerlist
+                </a>
+              </li>
+              <li>
+                <a href="https://gravatar.com/derekgembus1" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  Gravatar
                 </a>
               </li>
             </ul>
@@ -39,25 +48,42 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Professional & Freelance</h4>
             <ul className="space-y-3">
               <li>
-                <a href="https://linkedin.com/in/derekgembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                <a href="https://www.linkedin.com/in/derekgembus/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   LinkedIn
                 </a>
               </li>
               <li>
-                {/* Note: Paste your full Freelancermap URL here */}
-                <a href="https://www.freelancermap.com/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                <a href="https://wellfound.com/u/derek-gembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  Wellfound
+                </a>
+              </li>
+              <li>
+                <a href="https://contra.com/derek_kf4qf2cc/work?r=derek_kf4qf2cc" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  Contra
+                </a>
+              </li>
+              <li>
+                <a href="https://about.me/derekgembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  About.me
+                </a>
+              </li>
+              <li>
+                <a href="https://beacons.ai/derekgembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  Beacons
+                </a>
+              </li>
+              <li>
+                <a href="https://www.freelancermap.com/profile/it-support-specialist-und-data-engineer-with-python-programming-expertise" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   Freelancermap
                 </a>
               </li>
               <li>
-                {/* Note: Paste your full Freelancer URL here */}
-                <a href="https://www.freelancer.com/u/derek176" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                <a href="https://www.freelancer.com/u/derek176?frm=derek176&sb=t" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   Freelancer
                 </a>
               </li>
               <li>
-                {/* Note: Paste your full Upwork URL here */}
-                <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                <a href="https://www.upwork.com/freelancers/~0122373814fc418105" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   Upwork
                 </a>
               </li>
@@ -81,6 +107,26 @@ const Footer = () => {
               <li>
                 <a href="https://paypal.me/DerekGembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   PayPal
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/DerekGembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  X
+                </a>
+              </li>
+              <li>
+                <a href="https://www.threads.com/@derekg216" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  Threads
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@derekgembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  TikTok
+                </a>
+              </li>
+              <li>
+                <a href="https://open.spotify.com/user/1258631055" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  Spotify
                 </a>
               </li>
             </ul>

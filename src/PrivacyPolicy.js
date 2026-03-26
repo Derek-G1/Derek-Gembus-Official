@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
               This Privacy Notice for Derek Gembus ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
             </p>
             <ul className="list-disc list-inside space-y-2 ml-4 mb-4">
-              <li>Visit our website at <a href="https://www.derekgembus.com/" className="text-purple-400 hover:underline">https://www.derekgembus.com/</a> or any website of ours that links to this Privacy Notice</li>
+              <li>Visit our website at <a href="https://derekgembus.com/" className="text-purple-400 hover:underline">https://derekgembus.com/</a> or any website of ours that links to this Privacy Notice</li>
               <li>Use Derek Gembus. I provide custom software development services, including website design, mobile app creation, data analytics, and IT automation consulting, alongside related hosting and maintenance support.</li>
               <li>Engage with us in other related ways, including any marketing or events</li>
             </ul>
@@ -131,7 +131,7 @@ const PrivacyPolicy = () => {
                 We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.
               </p>
               <p className="mb-4">
-                Like many businesses, we also collect information through cookies and similar technologies. You can find out more about this in our Cookie Notice: <a href="https://www.derekgembus.com/cookie-policy" className="text-purple-400 hover:underline">https://www.derekgembus.com/cookie-policy</a>.
+                Like many businesses, we also collect information through cookies and similar technologies. You can find out more about this in our Cookie Notice: <a href="/privacy#section5" className="text-purple-400 hover:underline">/privacy#section5</a>.
               </p>
               <p className="mb-2"><strong className="text-white">The information we collect includes:</strong></p>
               <ul className="list-disc list-inside space-y-3 ml-4">
@@ -251,7 +251,7 @@ const PrivacyPolicy = () => {
                 We also permit third parties and service providers to use online tracking technologies on our Services for analytics and advertising, including to help manage and display advertisements, to tailor advertisements to your interests, or to send abandoned shopping cart reminders (depending on your communication preferences).
               </p>
               <p className="mb-4">
-                Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice: <a href="https://www.derekgembus.com/cookie-policy" className="text-purple-400 hover:underline">https://www.derekgembus.com/cookie-policy</a>.
+                Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice: <a href="/privacy#section5" className="text-purple-400 hover:underline">/privacy#section5</a>.
               </p>
               <div className="bg-gray-800 p-4 rounded-lg">
                 <h4 className="font-bold text-white mb-2">Google Analytics</h4>
@@ -318,7 +318,7 @@ const PrivacyPolicy = () => {
                 <strong className="text-white">Withdrawing your consent:</strong> If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us using the contact details provided in the section "How Can You Contact Us About This Notice?" below.
               </p>
               <p className="mb-4">
-                <strong className="text-white">Cookies and similar technologies:</strong> Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services. For further information, please see our Cookie Notice: <a href="https://www.derekgembus.com/cookie-policy" className="text-purple-400 hover:underline">https://www.derekgembus.com/cookie-policy</a>.
+                <strong className="text-white">Cookies and similar technologies:</strong> Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services. For further information, please see our Cookie Notice: <a href="/privacy#section5" className="text-purple-400 hover:underline">/privacy#section5</a>.
               </p>
               <p>
                 If you have questions or comments about your privacy rights, you may email us at <a href="mailto:support@derekgembus.com" className="text-purple-400 hover:underline">support@derekgembus.com</a>.
@@ -361,7 +361,7 @@ const PrivacyPolicy = () => {
 
               <h3 className="text-xl font-semibold text-white mb-3">How to Exercise Your Rights</h3>
               <p className="mb-4">
-                To exercise these rights, you can contact us by submitting a data subject access request, by visiting <a href="http://www.derekgembus.com" className="text-purple-400 hover:underline">http://www.derekgembus.com</a>, or by referring to the contact details at the bottom of this document.
+                To exercise these rights, you can contact us by submitting a data subject access request, by visiting <a href="https://derekgembus.com" className="text-purple-400 hover:underline">https://derekgembus.com</a>, or by referring to the contact details at the bottom of this document.
               </p>
 
               <h3 className="text-xl font-semibold text-white mb-3">Appeals</h3>

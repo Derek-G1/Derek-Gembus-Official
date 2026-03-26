@@ -36,7 +36,7 @@ The website details the following professional services:
 ---
 
 ### 🔗 Links
-* **Website**: [https://www.derek-gembus.com](https://www.derek-gembus.com)
+* **Website**: [https://derekgembus.com](https://derekgembus.com)
 * **LinkedIn**: [Derek Gembus](https://www.linkedin.com/in/derek-gembus/)
 * **Upwork**: [Derek Gembus](https://www.upwork.com/freelancers/~0122373814fc418105)
 * **Fiverr**: [Derek Gembus](https://www.fiverr.com/sellers/derekg2/)
