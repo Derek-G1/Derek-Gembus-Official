@@ -57,4 +57,32 @@
     <priority>0.40</priority>
   </url>
 
+  <url>
+    <loc>https://derekgembus.com/cookie-policy</loc>
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+
+  <url>
+    <loc>https://derekgembus.com/forms</loc>
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://derekgembus.com/discovery</loc>
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <url>
+    <loc>https://derekgembus.com/scope-of-work</loc>
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
 </urlset>
