@@ -124,6 +124,11 @@ const Footer = () => {
                   Spotify
                 </a>
               </li>
+              <li>
+                <a href="https://www.youtube.com/@DerekGembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  YouTube
+                </a>
+              </li>
             </ul>
           </div>
 
