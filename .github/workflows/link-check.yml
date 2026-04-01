@@ -42,7 +42,7 @@ jobs:
         run: npx wait-on http://127.0.0.1:4173
 
       - name: Check links
-        run: npx linkinator http://127.0.0.1:4173 --recurse --skip "mailto:.*|tel:.*|https://play.google.com/.*"
+        run: npx linkinator http://127.0.0.1:4173 --recurse --skip "mailto:.*|tel:.*|https://play.google.com/.*|https://beacons.ai/.*|https://wellfound.com/.*|https://www.fiverr.com/.*"
 
       - name: Stop static server
         if: always()
