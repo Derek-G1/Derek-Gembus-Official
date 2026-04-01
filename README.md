@@ -42,6 +42,24 @@ The website details the following professional services:
 * **Fiverr**: [Derek Gembus](https://www.fiverr.com/sellers/derekg2/)
 * **Credly**: [Derek Gembus](https://www.credly.com/users/derek-gembus/badges#credly)
 * **Coursera**: [Derek Gembus](https://www.coursera.org/user/a67f9fe94a1e89bb37070005c50bbf76)
+### 🔗 External Links
+
+* **GitHub**: [https://github.com/Derek-G1](https://github.com/Derek-G1)
+* **Stack Overflow**: [https://stackoverflow.com/users/32499186/derek-gembus](https://stackoverflow.com/users/32499186/derek-gembus)
+* **About.me**: [https://about.me/derekgembus](https://about.me/derekgembus)
+* **Freelancer**: [https://www.freelancer.com/u/derek176?frm=derek176&sb=t](https://www.freelancer.com/u/derek176?frm=derek176&sb=t)
+* **Contra**: [https://contra.com/derek_kf4qf2cc/work?r=derek_kf4qf2cc](https://contra.com/derek_kf4qf2cc/work?r=derek_kf4qf2cc)
+* **Gravatar**: [https://gravatar.com/derekgembus1](https://gravatar.com/derekgembus1)
+* **Beacons**: [https://beacons.ai/derekgembus](https://beacons.ai/derekgembus)
+* **X**: [https://x.com/DerekGembus](https://x.com/DerekGembus)
+* **YouTube**: [https://www.youtube.com/@DerekGembus](https://www.youtube.com/@DerekGembus)
+* **Threads**: [https://www.threads.com/@derekg216](https://www.threads.com/@derekg216)
+* **Spotify**: [https://open.spotify.com/user/1258631055](https://open.spotify.com/user/1258631055)
+* **TikTok**: [https://www.tiktok.com/@derekgembus](https://www.tiktok.com/@derekgembus)
+* **Kwork**: [https://kwork.com/user/derekgembus](https://kwork.com/user/derekgembus)
+* **Freelancermap**: [https://www.freelancermap.com/profile/it-support-specialist-und-data-engineer-with-python-programming-expertise](https://www.freelancermap.com/profile/it-support-specialist-und-data-engineer-with-python-programming-expertise)
+* **Wellfound**: [https://wellfound.com/u/derek-gembus](https://wellfound.com/u/derek-gembus)
+
 
 ---
 
