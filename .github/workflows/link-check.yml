@@ -1,0 +1,52 @@
+name: Broken Link Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: '0 10 * * 1'
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+permissions:
+  contents: read
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Start static server
+        run: |
+          npx serve -s build -l 4173 &
+          echo $! > serve.pid
+
+      - name: Wait for server
+        run: npx wait-on http://127.0.0.1:4173
+
+      - name: Check links
+        run: npx linkinator http://127.0.0.1:4173 --recurse --skip "mailto:.*|tel:.*|https://play.google.com/.*"
+
+      - name: Stop static server
+        if: always()
+        run: |
+          if [ -f serve.pid ]; then
+            kill $(cat serve.pid) || true
+          fi
