@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import { ArrowLeft, Shield, Lock, Mail, FileText, Globe, Clock, Users, Eye, Bell, Scale, MapPin, HelpCircle } from 'lucide-react';
 
 const PrivacyPolicy = () => {
-  // Ensure page starts at top when visited
   useEffect(() => {
     window.scrollTo(0, 0);
     setPageMeta({
@@ -41,7 +40,7 @@ const PrivacyPolicy = () => {
           </h1>
           <p className="mb-6 text-gray-400 text-lg">Last updated: January 10, 2026</p>
 
-          {/* Introduction */}
+          
           <div className="mb-10 text-gray-300 leading-relaxed">
             <p className="mb-4">
               This Privacy Notice for Derek Gembus ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:
@@ -56,7 +55,7 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          {/* Summary of Key Points */}
+          
           <section className="bg-gray-900/50 p-6 rounded-2xl border border-gray-800 mb-10">
             <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
               <Shield className="w-6 h-6 mr-3 text-purple-500" />
@@ -77,7 +76,7 @@ const PrivacyPolicy = () => {
             </div>
           </section>
 
-          {/* Table of Contents */}
+          
           <section className="mb-10">
             <h2 className="text-2xl font-bold text-white mb-4">Table of Contents</h2>
             <ol className="list-decimal list-inside space-y-2 text-purple-400">
@@ -101,7 +100,7 @@ const PrivacyPolicy = () => {
 
           <div className="space-y-10 text-gray-300 leading-relaxed">
             
-            {/* Section 1 */}
+            
             <section id="section1">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <FileText className="w-6 h-6 mr-3 text-blue-400" />
@@ -150,7 +149,7 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            {/* Section 2 */}
+            
             <section id="section2">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Mail className="w-6 h-6 mr-3 text-purple-400" />
@@ -172,7 +171,7 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            {/* Section 3 */}
+            
             <section id="section3">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Scale className="w-6 h-6 mr-3 text-green-400" />
@@ -205,7 +204,7 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            {/* Section 4 */}
+            
             <section id="section4">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Users className="w-6 h-6 mr-3 text-blue-400" />
@@ -246,7 +245,7 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            {/* Section 5 */}
+            
             <section id="section5">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Eye className="w-6 h-6 mr-3 text-yellow-400" />
@@ -268,7 +267,7 @@ const PrivacyPolicy = () => {
               </div>
             </section>
 
-            {/* Section 6 */}
+            
             <section id="section6">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Clock className="w-6 h-6 mr-3 text-orange-400" />
@@ -283,7 +282,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* Section 7 */}
+            
             <section id="section7">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Lock className="w-6 h-6 mr-3 text-pink-500" />
@@ -295,7 +294,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* Section 8 */}
+            
             <section id="section8">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Users className="w-6 h-6 mr-3 text-red-400" />
@@ -310,7 +309,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* Section 9 */}
+            
             <section id="section9">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Shield className="w-6 h-6 mr-3 text-green-400" />
@@ -334,7 +333,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* Section 10 */}
+            
             <section id="section10">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Bell className="w-6 h-6 mr-3 text-gray-400" />
@@ -348,7 +347,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* Section 11 */}
+            
             <section id="section11">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <MapPin className="w-6 h-6 mr-3 text-blue-400" />
@@ -379,7 +378,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* Section 12 */}
+            
             <section id="section12">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Globe className="w-6 h-6 mr-3 text-teal-400" />
@@ -406,7 +405,7 @@ const PrivacyPolicy = () => {
               </div>
             </section>
 
-            {/* Section 13 */}
+            
             <section id="section13">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Bell className="w-6 h-6 mr-3 text-yellow-400" />
@@ -418,7 +417,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* Section 14 */}
+            
             <section id="section14">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Mail className="w-6 h-6 mr-3 text-purple-400" />
@@ -432,7 +431,7 @@ const PrivacyPolicy = () => {
               </div>
             </section>
 
-            {/* Section 15 */}
+            
             <section id="section15">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <HelpCircle className="w-6 h-6 mr-3 text-green-400" />
@@ -443,7 +442,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* Contact Section */}
+            
             <section className="border-t border-gray-800 pt-8">
               <h2 className="text-xl font-bold text-white mb-2">Have Questions?</h2>
               <p>

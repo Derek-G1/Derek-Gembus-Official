@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 select option, select optgroup {
-  background-color: #1f2937; /* Matches bg-gray-800 */
+  background-color: #1f2937; 
   color: white;
 }

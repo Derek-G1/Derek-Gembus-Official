@@ -25,10 +25,10 @@ const Services = () => {
     <div className="min-h-screen bg-black text-white">
       <Navbar />
 
-      {/* Main Content Container with Padding for Navbar */}
+      
       <div className="pt-24 p-4 md:p-8">
 
-        {/* Sub-Navigation / Breadcrumbs */}
+        
         <div className="flex justify-between items-center max-w-7xl mx-auto mb-12">
           <Link to="/" className="inline-flex items-center text-gray-400 hover:text-purple-400 transition-colors">
             <ArrowLeft className="w-5 h-5 mr-2" />
@@ -40,7 +40,7 @@ const Services = () => {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          {/* UPDATED H1 FOR SEO */}
+          
           <h1 className="text-5xl font-bold mb-6 md:mb-10 text-center leading-snug md:leading-relaxed bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Services & Pricing
           </h1>
@@ -52,17 +52,17 @@ const Services = () => {
             Pricing scales based on scope and complexity — you can start lean and upgrade over time.
           </p>
 
-          {/* --- WEB DEVELOPMENT PACKAGES --- */}
+          
           <section className="mb-16">
             <div className="flex items-center mb-8">
               <Layout className="w-8 h-8 text-blue-400 mr-3" />
-              {/* UPDATED H2 FOR SEO */}
+              
               <h2 className="text-3xl font-bold text-white">Website Design & Development Packages</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 align-top">
 
-             {/* 1-Page Package */}
+             
               <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-blue-500 transition-all flex flex-col h-full">
                 <h3 className="text-xl font-bold text-white mb-2">Single Page</h3>
                 <p className="text-gray-400 text-xs mb-4">Portfolios & Digital Cards</p>
@@ -82,7 +82,7 @@ const Services = () => {
                 </Link>
               </div>
 
-              {/* 2-Page Package */}
+              
               <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-blue-500 transition-all flex flex-col h-full">
                 <h3 className="text-xl font-bold text-white mb-2">2-Page Basic</h3>
                 <p className="text-gray-400 text-xs mb-4">Home + Menu/Services</p>
@@ -102,7 +102,7 @@ const Services = () => {
                 </Link>
               </div>
 
-              {/* 3-Page Package */}
+              
               <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-blue-500 transition-all flex flex-col h-full">
                 <h3 className="text-xl font-bold text-white mb-2">3-Page Starter</h3>
                 <p className="text-gray-400 text-xs mb-4">Home + Services + Contact</p>
@@ -122,7 +122,7 @@ const Services = () => {
                 </Link>
               </div>
 
-              {/* 4-Page Package (MOST POPULAR) */}
+              
               <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 border border-purple-500 shadow-xl transform lg:-translate-y-4 z-10 flex flex-col h-full relative">
                 <div className="absolute top-0 right-0 bg-purple-600 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">MOST POPULAR</div>
                 <h3 className="text-xl font-bold text-white mb-2">4-Page Business</h3>
@@ -143,7 +143,7 @@ const Services = () => {
                 </Link>
               </div>
 
-              {/* 5-Page Package */}
+              
               <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-blue-500 transition-all flex flex-col h-full">
                 <h3 className="text-xl font-bold text-white mb-2">5-Page Pro</h3>
                 <p className="text-gray-400 text-xs mb-4">Full Suite + Portfolio/Gallery</p>
@@ -176,7 +176,7 @@ const Services = () => {
           </section>
 
 
-          {/* --- SOCIAL MEDIA FOUNDATION SETUP (NO POSTING) --- */}
+          
           <section className="mb-20">
             <div className="flex items-center mb-8">
               <Share2 className="w-8 h-8 text-purple-400 mr-3" />
@@ -211,7 +211,7 @@ const Services = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Foundation */}
+              
               <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-purple-500 transition-all flex flex-col">
                 <h3 className="text-xl font-bold text-white mb-1">Foundation</h3>
                 <p className="text-gray-400 text-sm mb-4">Starter setup (no posting)</p>
@@ -232,7 +232,7 @@ const Services = () => {
                 </Link>
               </div>
 
-              {/* Pro Foundation */}
+              
               <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 border border-purple-500 shadow-xl flex flex-col relative">
                 <div className="absolute top-0 right-0 bg-purple-600 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">BEST VALUE</div>
                 <h3 className="text-xl font-bold text-white mb-1">Pro Foundation</h3>
@@ -255,7 +255,7 @@ const Services = () => {
                 </Link>
               </div>
 
-              {/* Authority Setup */}
+              
               <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-purple-500 transition-all flex flex-col">
                 <h3 className="text-xl font-bold text-white mb-1">Authority Setup</h3>
                 <p className="text-gray-400 text-sm mb-4">Measurement + local presence</p>
@@ -309,7 +309,7 @@ const Services = () => {
           </section>
 
 
-          {/* --- BUILDER vs WORDPRESS vs CUSTOM (2026 GUIDE) --- */}
+          
           <section className="mb-20">
             <div className="flex items-center mb-8">
               <Globe className="w-8 h-8 text-blue-400 mr-3" />
@@ -322,7 +322,7 @@ const Services = () => {
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {/* Builder */}
+              
               <div className="bg-gray-900/60 border border-gray-800 rounded-2xl p-6">
                 <h3 className="text-xl font-bold text-white mb-2">Website Builder</h3>
                 <p className="text-sm text-gray-400 mb-4">Wix / Squarespace / Webflow (best for simple sites)</p>
@@ -338,7 +338,7 @@ const Services = () => {
                 </div>
               </div>
 
-              {/* WordPress */}
+              
               <div className="bg-gray-900/60 border border-gray-800 rounded-2xl p-6">
                 <h3 className="text-xl font-bold text-white mb-2">WordPress (CMS)</h3>
                 <p className="text-sm text-gray-400 mb-4">Best when you want a powerful editor + plugins</p>
@@ -354,7 +354,7 @@ const Services = () => {
                 </div>
               </div>
 
-              {/* Custom */}
+              
               <div className="bg-gray-900/60 border border-gray-800 rounded-2xl p-6">
                 <h3 className="text-xl font-bold text-white mb-2">Custom Code</h3>
                 <p className="text-sm text-gray-400 mb-4">React / Next.js / Node / APIs (maximum performance)</p>
@@ -371,7 +371,7 @@ const Services = () => {
               </div>
             </div>
 
-            {/* Business Tier Reference */}
+            
             <div className="mt-8 bg-gray-900/40 border border-gray-800 rounded-2xl p-6">
               <h3 className="text-xl font-bold text-white mb-2">Business Tier Reference (2026)</h3>
               <p className="text-gray-400 text-sm mb-4">These ranges include design + build, but exclude third-party licensing/hosting.</p>
@@ -404,7 +404,7 @@ const Services = () => {
             </div>
           </section>
 
-          {/* --- GA4 / GTM ANALYTICS PACKAGES --- */}
+          
           <section className="mb-20">
             <div className="flex items-center mb-8">
               <BarChart className="w-8 h-8 text-yellow-500 mr-3" />
@@ -459,7 +459,7 @@ const Services = () => {
             </div>
           </section>
 
-          {/* --- PROJECT EXPECTATIONS --- */}
+          
           <section className="mb-20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800">
@@ -501,7 +501,7 @@ const Services = () => {
             </div>
           </section>
 
-          {/* --- CUSTOM SOFTWARE SOLUTIONS (NEW) --- */}
+          
           <section className="mb-20">
             <div className="flex items-center mb-8">
               <Cpu className="w-8 h-8 text-cyan-400 mr-3" />
@@ -544,7 +544,7 @@ const Services = () => {
             </div>
           </section>
 
-          {/* --- MOBILE APP DEVELOPMENT --- */}
+          
           <section className="mb-20">
             <div className="flex items-center mb-8">
               <div className="p-2 bg-pink-500/20 rounded-lg mr-3">
@@ -555,7 +555,7 @@ const Services = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-              {/* Basic App Package */}
+              
               <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800 hover:border-pink-500 transition-all flex flex-col">
                 <h3 className="text-2xl font-bold text-white mb-2">MVP / Starter App</h3>
                 <p className="text-gray-400 text-sm mb-4">Perfect for Prototypes & Simple Tools</p>
@@ -575,7 +575,7 @@ const Services = () => {
                 </Link>
               </div>
 
-              {/* Advanced App Package */}
+              
               <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8 border border-pink-500/30 hover:border-pink-500 transition-all flex flex-col">
                 <h3 className="text-2xl font-bold text-white mb-2">Full-Scale Application</h3>
                 <p className="text-gray-400 text-sm mb-4">For SaaS, Social, & Data-Driven Apps</p>
@@ -598,7 +598,7 @@ const Services = () => {
             </div>
           </section>
 
-          {/* --- CONSULTING & STRATEGY --- */}
+          
           <section className="mb-20">
             <div className="flex items-center mb-8">
               <div className="p-2 bg-yellow-500/20 rounded-lg mr-3">
@@ -609,7 +609,7 @@ const Services = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-              {/* Data Analytics */}
+              
               <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-yellow-500 transition-all flex flex-col">
                 <div className="mb-4 p-3 bg-yellow-500/10 w-fit rounded-lg"><BarChart className="w-6 h-6 text-yellow-500" /></div>
                 <h3 className="text-xl font-bold text-white mb-2">Power BI / Tableau Dashboards</h3>
@@ -625,7 +625,7 @@ const Services = () => {
                 <Link to="/quote" state={{ pkg: "Power BI / Tableau Dashboard" }} className="w-full block py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center rounded-lg transition-all mt-auto">Inquire</Link>
               </div>
 
-              {/* IT & Automation */}
+              
               <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-yellow-500 transition-all flex flex-col">
                 <div className="mb-4 p-3 bg-yellow-500/10 w-fit rounded-lg"><Zap className="w-6 h-6 text-yellow-500" /></div>
                 <h3 className="text-xl font-bold text-white mb-2">IT & Automation</h3>
@@ -638,7 +638,7 @@ const Services = () => {
                 <Link to="/quote" state={{ pkg: "IT Automation" }} className="w-full block py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white text-center rounded-lg transition-all mt-auto">Inquire</Link>
               </div>
 
-              {/* SEO & Growth */}
+              
               <div className="bg-gray-900 rounded-2xl p-6 border border-gray-800 hover:border-yellow-500 transition-all flex flex-col">
                 <div className="mb-4 p-3 bg-yellow-500/10 w-fit rounded-lg"><Search className="w-6 h-6 text-yellow-500" /></div>
                 <h3 className="text-xl font-bold text-white mb-2">SEO & Digital Growth</h3>
@@ -654,7 +654,7 @@ const Services = () => {
             </div>
           </section>
 
-          {/* --- HOSTING & MAINTENANCE --- */}
+          
           <section className="mb-20">
             <div className="flex items-center mb-8">
               <Server className="w-8 h-8 text-green-400 mr-3" />
@@ -667,7 +667,7 @@ const Services = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Hosting-only (Barebones) */}
+              
               <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-green-500/50 transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <div>
@@ -687,7 +687,7 @@ const Services = () => {
                 </ul>
               </div>
 
-              {/* Hosting + Maintenance (Recommended) */}
+              
               <div className="bg-gray-900/50 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-500 transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <div>
@@ -708,7 +708,7 @@ const Services = () => {
                 </ul>
               </div>
 
-              {/* Business Managed Hosting */}
+              
               <div className="bg-gray-900/50 p-8 rounded-2xl border border-blue-500/30 hover:border-blue-500 transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <div>
@@ -743,7 +743,7 @@ const Services = () => {
 
           </section>
 
-          {/* --- ADD-ONS & EXTRAS --- */}
+          
           <section>
             <div className="flex items-center mb-8">
               <Cpu className="w-8 h-8 text-pink-400 mr-3" />
@@ -837,7 +837,7 @@ const Services = () => {
             </div>
           </section>
 
-          {/* Bottom CTA */}
+          
           <div className="mt-20 text-center">
             <h2 className="text-3xl font-bold mb-6">Ready to get started?</h2>
             <Link to="/quote" className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg text-white font-bold hover:scale-105 transition-transform">

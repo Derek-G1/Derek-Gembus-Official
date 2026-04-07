@@ -8,10 +8,10 @@ const Footer = () => {
     <footer className="py-12 bg-gradient-to-b from-black to-gray-900 border-t border-gray-800">
       <div className="container mx-auto px-4">
         
-        {/* NEW 3-COLUMN EXTERNAL LINKS GRID */}
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 pb-10 border-b border-gray-800 text-center items-center justify-items-center">
           
-          {/* Column 1: Code & Community */}
+          
           <div className="flex flex-col items-center justify-center w-full">
             <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Code & Community</h4>
             <ul className="space-y-3 text-center w-full">
@@ -43,7 +43,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 2: Professional & Freelance */}
+          
           <div className="flex flex-col items-center justify-center w-full">
             <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Professional & Freelance</h4>
             <ul className="space-y-3 text-center w-full">
@@ -90,7 +90,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Gigs & Support */}
+          
           <div className="flex flex-col items-center justify-center w-full">
             <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Gigs & Support</h4>
             <ul className="space-y-3 text-center w-full">
@@ -134,7 +134,7 @@ const Footer = () => {
 
         </div>
 
-        {/* EXISTING INTERNAL SITE LINKS & COPYRIGHT */}
+        
         <div className="text-center">
           <div className="pt-2 flex flex-wrap justify-center items-center gap-3 text-center sm:flex-row sm:space-y-0 sm:space-x-6">
             

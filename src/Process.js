@@ -32,7 +32,7 @@ const Process = () => {
 
       <div className="pt-24 p-4 md:p-8 flex-grow">
         <div className="max-w-4xl mx-auto">
-          {/* Back Link */}
+          
           <Link
             to="/"
             className="inline-flex items-center text-gray-400 hover:text-purple-400 transition-colors mb-8"
@@ -41,7 +41,7 @@ const Process = () => {
             Back to Home
           </Link>
 
-          {/* Title */}
+          
           <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Project Process
           </h1>
@@ -59,9 +59,9 @@ const Process = () => {
             .
           </p>
 
-          {/* Steps */}
+          
           <div className="space-y-6">
-            {/* Step 1 */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <ClipboardList className="w-5 h-5 text-cyan-400" />
@@ -80,7 +80,7 @@ const Process = () => {
               </ul>
             </section>
 
-            {/* Step 2 */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <PenTool className="w-5 h-5 text-purple-400" />
@@ -99,7 +99,7 @@ const Process = () => {
               </ul>
             </section>
 
-            {/* Step 3 */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <ShieldCheck className="w-5 h-5 text-green-400" />
@@ -118,7 +118,7 @@ const Process = () => {
               </ul>
             </section>
 
-            {/* Step 4 */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <Clock className="w-5 h-5 text-blue-400" />
@@ -137,7 +137,7 @@ const Process = () => {
               </ul>
             </section>
 
-            {/* Step 5 */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <DollarSign className="w-5 h-5 text-yellow-400" />
@@ -156,7 +156,7 @@ const Process = () => {
               </ul>
             </section>
 
-            {/* Step 6 */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <Server className="w-5 h-5 text-green-400" />
@@ -186,7 +186,7 @@ const Process = () => {
               </div>
             </section>
 
-            {/* CTA */}
+            
             <section className="mt-10 bg-gradient-to-br from-gray-900 to-black border border-purple-500/30 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <Rocket className="w-5 h-5 text-purple-400" />

@@ -39,7 +39,7 @@ The website details the following professional services:
 * **Website**: [https://derekgembus.com](https://derekgembus.com)
 * **LinkedIn**: [Derek Gembus](https://www.linkedin.com/in/derek-gembus/)
 * **Upwork**: [Derek Gembus](https://www.upwork.com/freelancers/~0122373814fc418105)
-* **Fiverr**: [Derek Gembus](https://www.fiverr.com/sellers/derekg2/)
+* **Fiverr**: [Derek Gembus]((https://www.fiverr.com/s/8zqLaY4)
 * **Credly**: [Derek Gembus](https://www.credly.com/users/derek-gembus/badges#credly)
 * **Coursera**: [Derek Gembus](https://www.coursera.org/user/a67f9fe94a1e89bb37070005c50bbf76)
 ### 🔗 External Links

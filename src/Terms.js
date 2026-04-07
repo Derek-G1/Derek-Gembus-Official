@@ -39,7 +39,7 @@ const Terms = () => {
 
       <div className="pt-24 p-4 md:p-8 flex-grow">
         <div className="max-w-4xl mx-auto">
-          {/* Breadcrumb */}
+          
           <Link
             to="/"
             className="inline-flex items-center text-gray-400 hover:text-purple-400 transition-colors mb-8"
@@ -58,7 +58,7 @@ const Terms = () => {
             </div>
           </div>
 
-          {/* Header */}
+          
           <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Project Terms & Process
           </h1>
@@ -87,7 +87,7 @@ const Terms = () => {
             </p>
           </div>
 
-          {/* Quick nav */}
+          
           <div className="bg-gray-900/50 border border-gray-800 rounded-2xl p-6 mb-10">
             <div className="flex items-center gap-2 mb-3">
               <ClipboardList className="w-5 h-5 text-cyan-400" />
@@ -126,7 +126,7 @@ const Terms = () => {
           </div>
 
           <div className="space-y-6">
-            {/* 1) Paid Discovery */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <BadgeCheck className="w-5 h-5 text-green-400" />
@@ -154,7 +154,7 @@ const Terms = () => {
               </ul>
             </section>
 
-            {/* 2) Scope & Deliverables */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <FileText className="w-5 h-5 text-blue-400" />
@@ -191,7 +191,7 @@ const Terms = () => {
               </div>
             </section>
 
-            {/* 3) Revisions */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <PenTool className="w-5 h-5 text-purple-400" />
@@ -212,7 +212,7 @@ const Terms = () => {
               </ul>
             </section>
 
-            {/* 4) Timelines + Rush + Delays */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <Clock className="w-5 h-5 text-cyan-400" />
@@ -244,7 +244,7 @@ const Terms = () => {
               </ul>
             </section>
 
-            {/* 5) Payments */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <DollarSign className="w-5 h-5 text-green-400" />
@@ -294,7 +294,7 @@ const Terms = () => {
               </div>
             </section>
 
-            {/* 6) Change Requests */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <AlertTriangle className="w-5 h-5 text-yellow-400" />
@@ -321,7 +321,7 @@ const Terms = () => {
               </ul>
             </section>
 
-            {/* 7) Hosting & Maintenance */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <Server className="w-5 h-5 text-yellow-400" />
@@ -335,7 +335,7 @@ const Terms = () => {
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {/* Hosting-only */}
+                
                 <div className="bg-black/30 border border-gray-800 rounded-xl p-4">
                   <div className="text-white font-bold mb-1">Hosting-only</div>
                   <div className="text-green-400 font-semibold mb-2">$25–$50/mo</div>
@@ -346,7 +346,7 @@ const Terms = () => {
                   </ul>
                 </div>
 
-                {/* Hosting + Maintenance */}
+                
                 <div className="bg-black/30 border border-purple-500/30 rounded-xl p-4">
                   <div className="text-white font-bold mb-1">
                     Hosting + Maintenance
@@ -360,7 +360,7 @@ const Terms = () => {
                   </ul>
                 </div>
 
-                {/* Business Tier */}
+                
                 <div className="bg-black/30 border border-gray-800 rounded-xl p-4">
                   <div className="text-white font-bold mb-1">
                     Business Managed Hosting
@@ -385,7 +385,7 @@ const Terms = () => {
               </div>
             </section>
 
-            {/* 8) Policies + Compliance */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <AlertTriangle className="w-5 h-5 text-red-400" />
@@ -408,7 +408,7 @@ const Terms = () => {
               </ul>
             </section>
 
-            {/* 9) Client Responsibilities */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <ShieldCheck className="w-5 h-5 text-blue-400" />
@@ -430,7 +430,7 @@ const Terms = () => {
               </ul>
             </section>
 
-            {/* 10) Support & Warranty */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <ShieldCheck className="w-5 h-5 text-green-400" />

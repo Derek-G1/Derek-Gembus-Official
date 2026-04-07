@@ -22,7 +22,7 @@ const Forms = () => {
       <main className="flex-grow pt-24 px-4 md:px-8 flex flex-col items-center">
         <div className="w-full max-w-5xl">
           
-          {/* Header */}
+          
           <div className="text-center mb-16 space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Project Forms
@@ -32,10 +32,10 @@ const Forms = () => {
             </p>
           </div>
 
-          {/* Cards Grid */}
+          
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             
-            {/* Discovery Card */}
+            
             <Link 
               to="/discovery"
               className="group relative bg-gray-900/50 rounded-2xl p-8 border border-gray-800 hover:border-purple-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-900/20"
@@ -62,7 +62,7 @@ const Forms = () => {
               </div>
             </Link>
 
-            {/* Scope of Work Card */}
+            
             <Link 
               to="/scope-of-work"
               className="group relative bg-gray-900/50 rounded-2xl p-8 border border-gray-800 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20"
@@ -91,7 +91,7 @@ const Forms = () => {
 
           </div>
 
-          {/* Security Note */}
+          
           <div className="bg-gray-900/30 border border-gray-800 rounded-xl p-6 flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
             <div className="p-3 bg-green-500/10 rounded-full text-green-500">
               <ShieldCheck className="w-6 h-6" />

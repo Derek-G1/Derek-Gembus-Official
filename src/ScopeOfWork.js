@@ -776,7 +776,7 @@ export default function ScopeOfWork() {
           </div>
         </div>
  
-        {/* Hidden PDF Templates */}
+        
         <div
           style={{
             position: "absolute",
@@ -787,7 +787,7 @@ export default function ScopeOfWork() {
             color: "black",
           }}
         >
-          {/* BLANK TEMPLATE */}
+          
           <div
             id="sow-pdf-template-blank"
             style={{
@@ -895,7 +895,7 @@ export default function ScopeOfWork() {
             </div>
           </div>
  
-          {/* SUBMITTED COPY TEMPLATE */}
+          
           <div
             id="sow-pdf-template-filled"
             style={{

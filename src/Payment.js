@@ -21,9 +21,7 @@ const buildQuoteLink = (pkg, note) =>
   `/quote?pkg=${encodeURIComponent(pkg)}&note=${encodeURIComponent(note)}`;
 
 
-  // Stripe Payment Links (update these anytime)
   const stripeOptions = [
-        // Project deposits & milestones (use Stripe links when available; otherwise request an invoice link)
     {
       id: 'website_deposit_3page',
       label: 'Website Deposit (3-Page Starter) — $750',
@@ -87,7 +85,6 @@ const buildQuoteLink = (pkg, note) =>
     }
   ];
 
-  // Start as null so user must choose
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleSelectionChange = (e) => {
@@ -116,7 +113,7 @@ const buildQuoteLink = (pkg, note) =>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-            {/* Option 1: Credit Card / Stripe */}
+            
             <div className="bg-gray-900 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-500 transition-all flex flex-col relative overflow-hidden">
 
               <div className="flex items-start justify-between mb-2">
@@ -134,7 +131,7 @@ const buildQuoteLink = (pkg, note) =>
                 Secure checkout for deposits, milestones, and hosting subscriptions
               </p>
 
-              {/* Dropdown Selector */}
+              
 
               <div className="mb-4 relative">
                 <label className="block text-gray-400 text-sm mb-2">Select a payment option (Stripe):</label>
@@ -157,14 +154,14 @@ const buildQuoteLink = (pkg, note) =>
                 </div>
               </div>
 
-              {/* Dynamic Description */}
+              
               <p className="text-gray-400 text-sm mb-4 min-h-[40px]">
                 {selectedOption
                   ? selectedOption.description
                   : "Please select an option from the menu above to proceed."}
               </p>
 
-              {/* Special Note for Hourly */}
+              
               {selectedOption?.isHourly && (
                 <div className="mb-6 p-3 bg-blue-500/10 border border-blue-500/30 rounded-lg flex items-start gap-3">
                   <Info className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
@@ -175,7 +172,7 @@ const buildQuoteLink = (pkg, note) =>
                 </div>
               )}
 
-                            {/* Dynamic Button */}
+                            
               {!selectedOption ? (
                 <button
                   type="button"
@@ -206,7 +203,7 @@ const buildQuoteLink = (pkg, note) =>
               )}
             </div>
 
-            {/* Option 2: Invoices / Alternate Payments */}
+            
             <div className="bg-gray-900 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-500 transition-all flex flex-col">
               <div className="p-3 bg-purple-500/20 rounded-lg w-fit mb-4">
                 <Lock className="w-8 h-8 text-purple-300" />
@@ -234,7 +231,7 @@ const buildQuoteLink = (pkg, note) =>
               </div>
             </div>
 
-            {/* Option 3: Quick Pay Labels (no personal links exposed) */}
+            
             <div className="bg-gray-900 p-8 rounded-2xl border border-purple-500/30 hover:border-purple-500 transition-all md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
                 <DollarSign className="w-6 h-6 text-green-400" />

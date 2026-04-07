@@ -18,7 +18,7 @@ const NotFound = () => {
     <div className="min-h-screen bg-black text-white flex flex-col">
       <Navbar />
 
-      {/* Main Content Centered */}
+      
       <div className="flex-grow flex items-center justify-center p-4 pt-24">
         <div className="text-center max-w-lg">
           <div className="flex justify-center mb-6">

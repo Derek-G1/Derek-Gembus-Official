@@ -20,18 +20,14 @@ const Quote = () => {
   const [status, setStatus] = useState(''); // 'sending', 'success', 'error'
   const location = useLocation();
 
-  // BOT PROTECTION: Track when the page loaded
   const [loadTime, setLoadTime] = useState(Date.now());
 
-  // State for form selections
   const [selectedPackage, setSelectedPackage] = useState('');
   const [referralSource, setReferralSource] = useState('');
   const [prefillMessage, setPrefillMessage] = useState('');
 
-  // Validation State
   const [errors, setErrors] = useState({});
 
-  // NEW: toggle the quote form open/closed (better UX now that Discovery/SOW exist)
   const [showQuoteForm, setShowQuoteForm] = useState(true);
 
   useEffect(() => {
@@ -45,7 +41,6 @@ const Quote = () => {
 
     setLoadTime(Date.now());
 
-    // Prefill from navigation state or query params
     const params = new URLSearchParams(location.search);
     const pkgParam = params.get('pkg');
     const noteParam = params.get('note');
@@ -61,11 +56,9 @@ const Quote = () => {
     if (noteParam) setPrefillMessage(noteParam);
   }, [location]);
 
-  // --- DYNAMIC PLACEHOLDER LOGIC ---
   const getPlaceholder = () => {
     if (!selectedPackage) return 'Please select a service above to see specific questions...';
 
-    // Web Development
     if (
       selectedPackage.includes('Website') ||
       selectedPackage.includes('Web') ||
@@ -75,17 +68,14 @@ const Quote = () => {
     }
 
 
-    // Social Media Foundation Setup (No Posting)
     if (selectedPackage.includes('Social Media Foundation') || selectedPackage.includes('Presence Tune-Up') || selectedPackage.includes('Social Media Setup')) {
       return "Which platforms do you want set up (IG/FB/TikTok/LinkedIn/YouTube)? Do accounts already exist? Who should be the owner/admin? Do you have a business email + logo/brand colors? Do you want a Linktree/Beacons hub or a custom link hub on your domain?";
     }
 
-    // Mobile App
     if (selectedPackage.includes('Mobile App')) {
       return "What is the core function of the app? Do you need it for iOS, Android, or both? Do users need to log in? (e.g. 'I need a fitness tracking app where users can save workouts')";
     }
 
-    // Data Analytics
     if (
       selectedPackage.includes('Data') ||
       selectedPackage.includes('Analytics') ||
@@ -96,37 +86,30 @@ const Quote = () => {
       return 'What data sources do you want to visualize (e.g. Google Sheets, Excel, SQL, Google Analytics)? What specific questions are you trying to answer with this data?';
     }
 
-    // IT Automation
     if (selectedPackage.includes('Automation')) {
       return "Describe the workflow you want to automate. (e.g. 'When a user fills out my contact form, I want it to automatically create a card in Trello and send a Slack message.')";
     }
 
-    // Figma Design / Prototyping
     if (selectedPackage.includes('Figma') || selectedPackage.includes('Wireframe') || selectedPackage.includes('Design')) {
       return 'Do you already have branding (logo/colors/fonts)? What pages/screens do you need, and do you want wireframes only or high-fidelity designs? If you have examples you like, link them here.';
     }
 
-    // Custom Software / Internal Tools
     if (selectedPackage.includes('Custom Software') || selectedPackage.includes('Internal Tool')) {
       return 'What problem are you solving, who will use it, and what are the key workflows? Do you need logins/roles, data import/export, or integrations with existing tools?';
     }
 
-    // Databases / APIs
     if (selectedPackage.includes('Database') || selectedPackage.includes('API')) {
       return 'What data will you store, and what actions should the system support (create/read/update/delete)? Do you need user accounts/roles, admin tools, reports, or third-party integrations?';
     }
 
-    // Support & Maintenance
     if (selectedPackage.includes('Maintenance') || selectedPackage.includes('Bug') || selectedPackage.includes('Hourly')) {
       return "Please describe the issue you are facing or the specific updates you need. If something is broken, please include a link to the page.";
     }
 
-    // SEO
     if (selectedPackage.includes('Performance') || selectedPackage.includes('SEO')) {
       return 'What specific issues are you noticing? (e.g. Site is slow on mobile, not showing up on Google Maps). Who is your target audience?';
     }
 
-    // Invoices / Payment Requests
     if (selectedPackage.includes('Invoice') || selectedPackage.includes('Payment')) {
       return 'What is this payment for (deposit, hosting, maintenance, milestone)? If you have a project name or invoice reference, include it here.';
     }
@@ -142,31 +125,26 @@ const Quote = () => {
     return 'Tell me specifically what you want to achieve. Are there any specific features or requirements you need?';
   };
 
-  // --- VALIDATION LOGIC ---
   const validateForm = () => {
     const newErrors = {};
     const formData = new FormData(form.current);
 
-    // 1. Name
     const name = formData.get('from_name');
     if (!name || name.trim().length < 2) {
       newErrors.from_name = 'Name is required (min 2 characters).';
     }
 
-    // 2. Email
     const email = formData.get('user_email');
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email || !emailRegex.test(email)) {
       newErrors.user_email = 'Please enter a valid email address.';
     }
 
-    // 3. Phone (Optional, but validate format if present)
     const phone = formData.get('user_phone');
     if (phone && phone.replace(/\D/g, '').length < 10) {
       newErrors.user_phone = 'Please enter a valid phone number (10+ digits).';
     }
 
-    // 4. Referral
     if (!referralSource) {
       newErrors.referral_source = 'Please select how you heard about me.';
     }
@@ -178,7 +156,6 @@ const Quote = () => {
       newErrors.referral_other = 'Please specify which social media platform.';
     }
 
-    // 5. Project Scope
     if (!selectedPackage) {
       newErrors.service_package = 'Please select a service package.';
     }
@@ -198,13 +175,11 @@ const Quote = () => {
       newErrors.timeline = 'Please select a desired timeline.';
     }
 
-    // 6. Message
     const message = formData.get('message');
     if (!message || message.trim().length < 10) {
       newErrors.message = 'Please provide a bit more detail about your project (min 10 chars).';
     }
 
-    // 7. Agreements
     if (!formData.get('terms_accepted')) {
       newErrors.terms_accepted = 'Please confirm you agree to the basic terms.';
     }
@@ -223,14 +198,12 @@ const Quote = () => {
 
     setErrors(newErrors);
 
-    // If errors exist, scroll to the first one
     if (Object.keys(newErrors).length > 0) {
       const firstErrorField = Object.keys(newErrors)[0];
       const element = document.getElementsByName(firstErrorField)[0];
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'center' });
       } else {
-        // Fallback if element not found
         window.scrollTo({ top: 100, behavior: 'smooth' });
       }
       return false;
@@ -242,10 +215,8 @@ const Quote = () => {
     e.preventDefault();
     const formData = new FormData(form.current);
 
-    // --- BOT PROTECTION ---
     const honeypot = formData.get('confirm_email');
     if (honeypot || Date.now() - loadTime < 3000) {
-      // fake success
       setStatus('success');
       return;
     }
@@ -276,7 +247,6 @@ const Quote = () => {
 
   const handleInputChange = (e) => {
     const { name } = e.target;
-    // Clear error for this specific field when user types/changes it
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: null }));
     }
@@ -293,7 +263,7 @@ const Quote = () => {
       <Navbar />
 
       <div className="pt-24 p-4 md:p-8 flex flex-col items-center justify-center">
-        {/* Back Link */}
+        
         <div className="w-full max-w-3xl mb-8">
           <Link
             to="/services"
@@ -304,7 +274,7 @@ const Quote = () => {
         </div>
 
         <div className="w-full max-w-3xl bg-gray-900/50 p-8 md:p-12 rounded-2xl border border-purple-500/30 shadow-2xl relative overflow-hidden">
-          {/* Background Glow */}
+          
           <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-purple-600/20 blur-3xl rounded-full pointer-events-none"></div>
           <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-blue-600/20 blur-3xl rounded-full pointer-events-none"></div>
 
@@ -315,7 +285,7 @@ const Quote = () => {
             Choose the fastest way to kick off your project — then I’ll respond within 24 hours.
           </p>
 
-          {/* ✅ NEW: Start Here / Hub Section */}
+          
           <div className="relative z-10 mb-8 grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link
               to="/discovery"
@@ -358,7 +328,7 @@ const Quote = () => {
             </Link>
           </div>
 
-          {/* ✅ NEW: Toggle for quote form */}
+          
           <button
             type="button"
             onClick={() => setShowQuoteForm((v) => !v)}
@@ -377,7 +347,7 @@ const Quote = () => {
             )}
           </button>
 
-          {/* SUCCESS UI */}
+          
           {status === 'success' ? (
             <div className="bg-green-500/10 border border-green-500/50 rounded-xl p-8 text-center animate-fade-in mt-6 relative z-10">
               <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
@@ -399,18 +369,18 @@ const Quote = () => {
                   className="space-y-8 relative z-10 mt-6"
                   noValidate
                 >
-                  {/* Honeypot */}
+                  
                   <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
                     <input type="text" name="confirm_email" tabIndex="-1" autoComplete="off" />
                   </div>
 
-                  {/* SECTION 1: CONTACT INFO */}
+                  
                   <div className="space-y-4">
                     <h3 className="text-lg font-bold text-white border-b border-gray-800 pb-2 mb-4">
                       1. Contact Information
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {/* Name */}
+                      
                       <div>
                         <label className="block text-sm font-medium text-gray-400 mb-2">Your Name *</label>
                         <input
@@ -425,7 +395,7 @@ const Quote = () => {
                         {errors.from_name && <p className="text-red-400 text-xs mt-1">{errors.from_name}</p>}
                       </div>
 
-                      {/* Email */}
+                      
                       <div>
                         <label className="block text-sm font-medium text-gray-400 mb-2">Email Address *</label>
                         <input
@@ -440,7 +410,7 @@ const Quote = () => {
                         {errors.user_email && <p className="text-red-400 text-xs mt-1">{errors.user_email}</p>}
                       </div>
 
-                      {/* Phone */}
+                      
                       <div>
                         <label className="block text-sm font-medium text-gray-400 mb-2">Phone Number</label>
                         <input
@@ -455,7 +425,7 @@ const Quote = () => {
                         {errors.user_phone && <p className="text-red-400 text-xs mt-1">{errors.user_phone}</p>}
                       </div>
 
-                      {/* Referral Source */}
+                      
                       <div className={['Other', 'Social Media', 'Referral'].includes(referralSource) ? 'md:col-span-1' : ''}>
                         <label className="block text-sm font-medium text-gray-400 mb-2">
                           How did you hear about me? *
@@ -483,7 +453,7 @@ const Quote = () => {
                         {errors.referral_source && <p className="text-red-400 text-xs mt-1">{errors.referral_source}</p>}
                       </div>
 
-                      {/* Dynamic Extra Input */}
+                      
                       {['Other', 'Social Media', 'Referral'].includes(referralSource) && (
                         <div className="animate-fade-in md:col-span-1">
                           <label className="block text-sm font-medium text-gray-400 mb-2">{getReferralLabel()}</label>
@@ -502,13 +472,13 @@ const Quote = () => {
                     </div>
                   </div>
 
-                  {/* SECTION 2: PROJECT SCOPE */}
+                  
                   <div className="space-y-4">
                     <h3 className="text-lg font-bold text-white border-b border-gray-800 pb-2 mb-4">
                       2. Project Scope
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {/* Service Package */}
+                      
                       <div>
                         <label className="block text-sm font-medium text-gray-400 mb-2">Interested Service *</label>
                         <select
@@ -581,7 +551,7 @@ const Quote = () => {
                         {errors.service_package && <p className="text-red-400 text-xs mt-1">{errors.service_package}</p>}
                       </div>
 
-                      {/* Estimated Budget */}
+                      
                       <div>
                         <label className="block text-sm font-medium text-gray-400 mb-2">Estimated Budget *</label>
                         <select
@@ -606,7 +576,7 @@ const Quote = () => {
                         {errors.budget && <p className="text-red-400 text-xs mt-1">{errors.budget}</p>}
                       </div>
 
-                      {/* Preferred Payment Method */}
+                      
                       <div>
                         <label className="block text-sm font-medium text-gray-400 mb-2">
                           Preferred Payment Method *
@@ -636,7 +606,7 @@ const Quote = () => {
                         )}
                       </div>
 
-                      {/* Timeline */}
+                      
                       <div className="md:col-span-1">
                         <label className="block text-sm font-medium text-gray-400 mb-2">Desired Timeline *</label>
                         <select
@@ -659,7 +629,7 @@ const Quote = () => {
                         {errors.timeline && <p className="text-red-400 text-xs mt-1">{errors.timeline}</p>}
                       </div>
 
-                      {/* Desired Launch Date (Optional) */}
+                      
                       <div className="md:col-span-2">
                         <label className="block text-sm font-medium text-gray-400 mb-2">
                           Desired Launch Date <span className="text-xs text-gray-500 ml-2">(Optional)</span>
@@ -674,7 +644,7 @@ const Quote = () => {
                         </p>
                       </div>
 
-                      {/* Page List / Sitemap (Optional) */}
+                      
                       <div className="md:col-span-2">
                         <label className="block text-sm font-medium text-gray-400 mb-2">
                           Pages / Sitemap Notes <span className="text-xs text-gray-500 ml-2">(Optional)</span>
@@ -689,7 +659,7 @@ const Quote = () => {
                     </div>
                   </div>
 
-                  {/* SECTION 3: BUSINESS NEEDS */}
+                  
                   <div className="space-y-4">
                     <h3 className="text-lg font-bold text-white border-b border-gray-800 pb-2 mb-4">
                       3. Business Goals
@@ -739,7 +709,7 @@ const Quote = () => {
                     </div>
                   </div>
 
-                  {/* SECTION 4: OPEN TEXT */}
+                  
                   <div>
                     <label className="block text-sm font-medium text-gray-400 mb-2">Additional Details *</label>
                     <textarea
@@ -756,7 +726,7 @@ const Quote = () => {
                     {errors.message && <p className="text-red-400 text-xs mt-1">{errors.message}</p>}
                   </div>
 
-                  {/* AGREEMENTS */}
+                  
                   <div className="space-y-3 p-4 bg-purple-500/5 rounded-xl border border-purple-500/20">
                     <label className="flex items-start cursor-pointer group">
                       <input
