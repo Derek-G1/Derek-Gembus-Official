@@ -72,7 +72,7 @@ const SiteTerms = () => {
           </div>
 
           <div className="space-y-6">
-            {/* Acceptable Use */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <ShieldCheck className="w-5 h-5 text-green-400" />
@@ -90,7 +90,7 @@ const SiteTerms = () => {
               </ul>
             </section>
 
-            {/* IP */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <FileText className="w-5 h-5 text-blue-400" />
@@ -103,7 +103,7 @@ const SiteTerms = () => {
               </p>
             </section>
 
-            {/* No Advice */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <Scale className="w-5 h-5 text-cyan-400" />
@@ -116,7 +116,7 @@ const SiteTerms = () => {
               </p>
             </section>
 
-            {/* No Guarantees */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <AlertTriangle className="w-5 h-5 text-yellow-400" />
@@ -133,7 +133,7 @@ const SiteTerms = () => {
               </ul>
             </section>
 
-            {/* Third Party Links */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <LinkIcon className="w-5 h-5 text-purple-400" />
@@ -153,7 +153,7 @@ const SiteTerms = () => {
               </ul>
             </section>
 
-            {/* Disclaimer */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <Gavel className="w-5 h-5 text-red-400" />
@@ -165,7 +165,7 @@ const SiteTerms = () => {
               </p>
             </section>
 
-            {/* Limitation of Liability */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <ShieldCheck className="w-5 h-5 text-green-400" />
@@ -181,7 +181,7 @@ const SiteTerms = () => {
               </p>
             </section>
 
-            {/* Changes */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <FileText className="w-5 h-5 text-blue-400" />
@@ -193,7 +193,7 @@ const SiteTerms = () => {
               </p>
             </section>
 
-            {/* Contact */}
+            
             <section className="bg-gray-900/60 border border-purple-500/20 rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-3">
                 <Mail className="w-5 h-5 text-purple-400" />

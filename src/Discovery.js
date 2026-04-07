@@ -610,7 +610,7 @@ export default function Discovery() {
           </div>
         </div>
  
-        {/* Hidden PDF Templates */}
+        
         <div
           style={{
             position: "absolute",
@@ -621,7 +621,7 @@ export default function Discovery() {
             color: "black",
           }}
         >
-          {/* BLANK */}
+          
           <div
             id="discovery-pdf-template-blank"
             style={{ padding: "28px", fontFamily: "Arial, sans-serif", fontSize: "12px", lineHeight: 1.5 }}
@@ -698,7 +698,7 @@ export default function Discovery() {
             </div>
           </div>
  
-          {/* FILLED */}
+          
           <div
             id="discovery-pdf-template-filled"
             style={{ padding: "28px", fontFamily: "Arial, sans-serif", fontSize: "12px", lineHeight: 1.5 }}

@@ -72,7 +72,7 @@ const Navbar = ({ isHome = false }) => {
             Derek Gembus
           </Link>
 
-          {/* Desktop Navigation */}
+          
           <div className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               link.isAnchor ? (
@@ -104,7 +104,7 @@ const Navbar = ({ isHome = false }) => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
+          
           <button
             className="md:hidden p-2 text-gray-300 hover:text-white transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -120,7 +120,7 @@ const Navbar = ({ isHome = false }) => {
           </button>
         </div>
 
-        {/* Mobile Navigation Menu */}
+        
         <div
           id="mobile-menu"
           className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${

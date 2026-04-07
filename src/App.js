@@ -292,7 +292,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Skip to main content link for accessibility */}
+      
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-purple-600 focus:text-white focus:rounded-lg"
@@ -302,7 +302,7 @@ const App = () => {
 
       <Navbar isHome={true} />
 
-      {/* Hero Section */}
+      
       <header id="home-hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-black to-purple-900">
           <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -323,7 +323,7 @@ const App = () => {
               Transforming complex challenges into elegant solutions
             </p>
 
-            {/* Actions */}
+            
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-6">
               <Link
                 to="/services"
@@ -351,9 +351,9 @@ const App = () => {
         </div>
       </header>
 
-      {/* Main Content */}
+      
       <main id="main-content" className="relative">
-        {/* About Section */}
+        
         <section id="about" className="py-20 relative overflow-hidden" aria-labelledby="about-heading">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
@@ -376,7 +376,7 @@ const App = () => {
           </div>
         </section>
 
-        {/* Services Section */}
+        
         <section id="services" className="py-20 relative bg-black" aria-labelledby="services-heading">
           <div className="container mx-auto px-4">
             <h2
@@ -409,7 +409,7 @@ const App = () => {
           </div>
         </section>
 
-        {/* Skills Section */}
+        
         <section id="skills" className="py-20 relative bg-black" aria-labelledby="skills-heading">
           <div className="container mx-auto px-4">
             <h2
@@ -446,7 +446,7 @@ const App = () => {
           </div>
         </section>
 
-        {/* Experience Section */}
+        
         <section id="experience" className="py-20 relative" aria-labelledby="experience-heading">
           <div className="container mx-auto px-4">
             <h2
@@ -488,7 +488,7 @@ const App = () => {
           </div>
         </section>
 
-        {/* Education Section */}
+        
         <section id="education" className="py-20 relative bg-black" aria-labelledby="education-heading">
           <div className="container mx-auto px-4">
             <h2
@@ -537,7 +537,7 @@ const App = () => {
           </div>
         </section>
 
-        {/* Projects Section */}
+        
         <section id="projects" className="py-20 relative" aria-labelledby="projects-heading">
           <div className="container mx-auto px-4">
             <h2
@@ -608,7 +608,7 @@ const App = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
+        
         <section id="testimonials" className="py-20 relative bg-black" aria-labelledby="testimonials-heading">
           <div className="container mx-auto px-4">
             <h2
@@ -646,7 +646,7 @@ const App = () => {
           </div>
         </section>
 
-        {/* Quote CTA */}
+        
         <section className="py-20 relative">
           <div className="container mx-auto px-4 text-center">
             <Link

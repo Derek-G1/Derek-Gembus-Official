@@ -26,12 +26,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    {/* ✅ Router MUST be outside ErrorBoundary so <Link> always works */}
+    
     <BrowserRouter>
       <ErrorBoundary>
         <Routes>
 
-          {/* ✅ Fix Soft 404 / duplicate URL: /index.html -> / */}
+          
           <Route path="/index.html" element={<Navigate to="/" replace />} />
 
           <Route path="/" element={<App />} />
@@ -40,21 +40,21 @@ root.render(
           <Route path="/services" element={<Services />} />
           <Route path="/quote" element={<Quote />} />
           
-          {/* Forms & Intakes */}
-          <Route path="/forms" element={<Forms />} /> {/* ✅ NEW ROUTE */}
+          
+          <Route path="/forms" element={<Forms />} /> 
           <Route path="/discovery" element={<Discovery />} />
           <Route path="/scope-of-work" element={<ScopeOfWork />} />
           
           <Route path="/pay" element={<Payment />} />
 
-          {/* Project Terms & Process */}
+          
           <Route path="/terms" element={<Terms />} />
 
-          {/* New pages */}
+          
           <Route path="/site-terms" element={<SiteTerms />} />
           <Route path="/process" element={<Process />} />
 
-          {/* ✅ Always last */}
+          
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ErrorBoundary>
