@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import {
   Code2, Database, Terminal, Server, FileCode2, Brain, BarChart,
   Laptop, Music, Utensils, PartyPopper, Globe,
-  Gamepad2, Shield, DollarSign, GraduationCap, MessageSquareQuote, BookOpen,
+  Gamepad2, DollarSign, GraduationCap, MessageSquareQuote, BookOpen,
   Layout, Smartphone, Clock
 } from 'lucide-react';
 import { setPageMeta } from './utils/seo';
@@ -206,15 +206,6 @@ const App = () => {
       tags: ["React", "Vite", "Tailwind", "GA4", "GTM", "Client Work"],
       icon: Layout,
       url: "https://spotlightcle.com"
-    },
-    {
-      title: "Block Guard",
-      description:
-        "Powerful Android call & message management app with intelligent filtering and DND modes.",
-      tags: ["Android", "Kotlin", "Jetpack Compose", "Room DB"],
-      icon: Shield,
-      playStoreUrl: "https://play.google.com/store/apps/details?id=com.radstormtech.blockguard",
-      url: "https://blockguard.app/"
     },
     {
       title: "Salary Compass",
