@@ -1,3 +1,7 @@
+<DirectoryMatch "^/.*/\.git/">
+    Require all denied
+</DirectoryMatch>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
