@@ -345,6 +345,34 @@ const App = () => {
       
       <main id="main-content" className="relative">
         
+        <section className="py-20 relative bg-black" aria-labelledby="giving-back-heading">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2
+                id="giving-back-heading"
+                className="text-4xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent leading-[1.15] pb-1"
+              >
+                Giving Back
+              </h2>
+              <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-2xl border border-purple-500/30 shadow-xl text-center">
+                <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto">
+                  Helping others is really important to me. Another way I do that is by donating plasma. I have been donating for almost a year now, and knowing I can help make a difference for someone in need means a lot to me. If you would like to help too, you can use my CSL Plasma referral link below.
+                </p>
+                <div className="mt-8 flex justify-center">
+                  <a
+                    href="https://rewards.cslplasma.com/referral/referral-unique-code/eyJkb25vcklEIjoiMDBFQzNTOSIsImNvZGUiOiI5OU1GN0JNS1ZEIiwicmVnaW9uU2hvcnROYW1lIjoidXMifQ=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center min-w-[220px] px-8 py-4 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105 font-semibold"
+                  >
+                    Register with CSL Plasma
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="about" className="py-20 relative overflow-hidden" aria-labelledby="about-heading">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">

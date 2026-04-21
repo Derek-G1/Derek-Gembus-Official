@@ -31,6 +31,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="https://mastodon.social/@DerekGembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  Mastodon
+                </a>
+              </li>
+              <li>
                 <a href="https://peerlist.io/derekgembus" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   Peerlist
                 </a>
@@ -50,6 +55,11 @@ const Footer = () => {
               <li>
                 <a href="https://www.linkedin.com/in/derekgembus/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
                   LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.flickr.com/photos/204405143@N07/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-purple-400 transition-colors">
+                  Flickr
                 </a>
               </li>
               <li>
