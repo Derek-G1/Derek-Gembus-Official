@@ -1,10 +1,13 @@
-<DirectoryMatch "^/.*/\.git/">
-    Require all denied
-</DirectoryMatch>
-
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^www\.derekgembus\.com$ [NC]
+  RewriteRule ^ https://derekgembus.com%{REQUEST_URI} [L,R=301]
+
+  RewriteRule (^|/)\.git(/|$) - [R=404,L]
+
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
