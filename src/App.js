@@ -361,6 +361,16 @@ const App = () => {
                 <div className="mt-8 flex justify-center">
                   <a
                     href="https://rewards.cslplasma.com/referral/referral-unique-code/eyJkb25vcklEIjoiMDBFQzNTOSIsImNvZGUiOiI5OU1GN0JNS1ZEIiwicmVnaW9uU2hvcnROYW1lIjoidXMifQ=="
+                    onClick={() => {
+                      window.dataLayer = window.dataLayer || [];
+                      window.dataLayer.push({
+                        event: 'csl_plasma_referral_click',
+                        link_text: 'Register with CSL Plasma',
+                        section_name: 'Giving Back',
+                        link_url:
+                          'https://rewards.cslplasma.com/referral/referral-unique-code/eyJkb25vcklEIjoiMDBFQzNTOSIsImNvZGUiOiI5OU1GN0JNS1ZEIiwicmVnaW9uU2hvcnROYW1lIjoidXMifQ==',
+                      });
+                    }}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center min-w-[220px] px-8 py-4 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105 font-semibold"
