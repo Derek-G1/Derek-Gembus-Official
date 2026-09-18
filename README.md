@@ -11,7 +11,7 @@ Built with **React 19** and **Tailwind CSS**, the application features a modern,
 * **Project Showcase**: A dedicated section displaying recent work with technology tags and links to live demos or repositories.
 * **Professional Timeline**: Visual displays of work experience, education, and certifications.
 * **Client Testimonials**: A section highlighting feedback from previous clients and employers.
-* **Contact Integration**: Functional contact form powered by **EmailJS**.
+* **Contact Integration**: Functional contact/quote forms via a cPanel PHP `mail()` endpoint.
 * **SEO Optimized**: Custom SEO utility handling metadata for different pages.
 
 ## 🛠 Technologies Used
@@ -19,7 +19,7 @@ Built with **React 19** and **Tailwind CSS**, the application features a modern,
 * **Frontend**: [React 19](https://react.dev/), [React Router v7](https://reactrouter.com/)
 * **Styling**: [Tailwind CSS v3](https://tailwindcss.com/)
 * **Icons**: [Lucide React](https://lucide.dev/)
-* **Form Handling**: [EmailJS](https://www.emailjs.com/)
+* **Form Handling**: PHP `mail()` endpoint on Namecheap/cPanel (`/api/contact.php`)
 * **Testing**: Jest & React Testing Library
 * **Deployment**: [Create React App](https://github.com/facebook/create-react-app) (Bootstrapped)
 

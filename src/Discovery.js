@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import emailjs from "@emailjs/browser";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { setPageMeta } from "./utils/seo";
@@ -15,6 +14,7 @@ import {
   scrollToField,
   isLikelyBot,
 } from "./utils/formHelpers";
+import { submitContactForm } from "./utils/submitContactForm";
  
 function buildDiscoveryBodies(data) {
   const {
@@ -230,7 +230,7 @@ export default function Discovery() {
     setSubmissionId(id);
     setSubmissionHash(hash);
  
-    const templateParams = {
+    const payload = {
       email_subject: `Discovery Intake: ${snapshot.project_name} — ${snapshot.from_name}`,
       form_type: "Discovery Intake",
       date: new Date().toLocaleString(),
@@ -240,15 +240,12 @@ export default function Discovery() {
       user_email: snapshot.user_email,
       client_body,
       internal_body,
+      formRenderedAt: loadTime,
+      confirm_email: formData.get("confirm_email") || "",
     };
  
     try {
-      await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_INTAKE_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-      );
+      await submitContactForm(payload);
  
       setStatus("success");
  

@@ -3,7 +3,6 @@ import { setPageMeta } from "./utils/seo";
 import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import emailjs from "@emailjs/browser";
 import { ArrowLeft, Send, CheckCircle, AlertCircle, Download } from "lucide-react";
  
 import { ErrorText, Section, CheckRow, inputClasses } from "./components/FormElements";
@@ -15,6 +14,7 @@ import {
   scrollToField,
   isLikelyBot,
 } from "./utils/formHelpers";
+import { submitContactForm } from "./utils/submitContactForm";
  
 function buildSowBodies(data) {
   const {
@@ -272,7 +272,7 @@ export default function ScopeOfWork() {
     setSubmissionId(id);
     setSubmissionHash(hash);
  
-    const templateParams = {
+    const payload = {
       email_subject: `Scope of Work: ${snapshot.project_name} — ${snapshot.from_name}`,
       form_type: "Scope of Work",
       date: new Date().toLocaleString(),
@@ -282,15 +282,12 @@ export default function ScopeOfWork() {
       user_email: snapshot.user_email,
       client_body,
       internal_body,
+      formRenderedAt: loadTime,
+      confirm_email: formData.get("confirm_email") || "",
     };
  
     try {
-      await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_INTAKE_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-      );
+      await submitContactForm(payload);
  
       setStatus("success");
  

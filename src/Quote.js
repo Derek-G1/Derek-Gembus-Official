@@ -13,11 +13,12 @@ import {
   ChevronDown,
   ChevronUp
 } from 'lucide-react';
-import emailjs from '@emailjs/browser';
+import { formElementToPayload, submitContactForm, getContactFormErrorMessage } from './utils/submitContactForm';
 
 const Quote = () => {
   const form = useRef();
   const [status, setStatus] = useState(''); // 'sending', 'success', 'error'
+  const [errorMessage, setErrorMessage] = useState('');
   const location = useLocation();
 
   const [loadTime, setLoadTime] = useState(Date.now());
@@ -211,7 +212,7 @@ const Quote = () => {
     return true;
   };
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     const formData = new FormData(form.current);
 
@@ -224,25 +225,28 @@ const Quote = () => {
     if (!validateForm()) return;
 
     setStatus('sending');
+    setErrorMessage('');
 
-    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const templateId = process.env.REACT_APP_EMAILJS_QUOTE_TEMPLATE_ID;
-    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
-
-    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
-      () => {
-        setStatus('success');
-        form.current.reset();
-        setReferralSource('');
-        setSelectedPackage('');
-        setPrefillMessage('');
-        setErrors({});
-      },
-      (error) => {
-        console.error(error);
-        setStatus('error');
-      }
-    );
+    try {
+      const payload = formElementToPayload(form.current, {
+        formType: 'Quote Request',
+        formRenderedAt: loadTime,
+        extra: {
+          email_subject: `Quote Request: ${formData.get('service_package') || 'General'} — ${formData.get('from_name') || ''}`.trim(),
+        },
+      });
+      await submitContactForm(payload);
+      setStatus('success');
+      form.current.reset();
+      setReferralSource('');
+      setSelectedPackage('');
+      setPrefillMessage('');
+      setErrors({});
+    } catch (error) {
+      console.error(error);
+      setErrorMessage(getContactFormErrorMessage(error));
+      setStatus('error');
+    }
   };
 
   const handleInputChange = (e) => {
@@ -373,6 +377,7 @@ const Quote = () => {
                   <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
                     <input type="text" name="confirm_email" tabIndex="-1" autoComplete="off" />
                   </div>
+                  <input type="hidden" name="formRenderedAt" value={String(loadTime)} />
 
                   
                   <div className="space-y-4">
@@ -806,7 +811,8 @@ const Quote = () => {
 
                   {status === 'error' && (
                     <div className="flex items-center justify-center text-red-400 text-sm mt-4">
-                      <AlertCircle className="w-4 h-4 mr-2" /> Something went wrong. Please check fields or try again.
+                      <AlertCircle className="w-4 h-4 mr-2" />{' '}
+                      {errorMessage || 'Something went wrong. Please check fields or try again.'}
                     </div>
                   )}
                 </form>
