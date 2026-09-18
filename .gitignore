@@ -36,7 +36,7 @@ Thumbs.db
 # Server-side mail config (copy from public/api/mail-config.sample.php)
 public/api/mail-config.php
 /api/mail-config.php
-
+public/api/storage/*.json
 /logs
 *.log
 npm-debug.log*
