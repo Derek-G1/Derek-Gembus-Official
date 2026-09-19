@@ -10,7 +10,28 @@
 
   <url>
     <loc>https://derekgembus.com/services</loc>
-    <lastmod>2026-01-18</lastmod>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://derekgembus.com/small-business-websites-cleveland</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://derekgembus.com/restaurant-websites-cleveland</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://derekgembus.com/contractor-websites-cleveland</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>

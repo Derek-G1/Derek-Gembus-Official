@@ -7,7 +7,8 @@ import {
   Code2, Database, Terminal, Server, FileCode2, Brain, BarChart,
   Laptop, Music, Utensils, PartyPopper, Globe, ExternalLink,
   Gamepad2, DollarSign, GraduationCap, MessageSquareQuote, BookOpen,
-  Layout, Smartphone, Clock, Shield, Dog, Briefcase, Users
+  Layout, Smartphone, Clock, Shield, Dog, Briefcase, Users,
+  Search, Wrench, PhoneCall, ArrowRight
 } from 'lucide-react';
 import { setPageMeta } from './utils/seo';
 
@@ -16,12 +17,39 @@ const App = () => {
     window.scrollTo(0, 0);
 
     setPageMeta({
-      title: 'Derek Gembus | Software Developer & Web Developer in Cleveland, Ohio',
+      title: 'Cleveland Small Business Websites | Derek Gembus',
       description:
-        'Software Developer, Data Engineer, and Web Developer based in Cleveland, Ohio. Building custom apps, websites, and data solutions for businesses.',
+        'Cleveland web developer building fast small business websites, SEO pages, contact forms, analytics, and monthly maintenance for local businesses.',
       canonicalPath: '/'
     });
   }, []);
+
+  const localWebsiteOffers = [
+    {
+      title: "Small Business Websites",
+      description:
+        "Fast, mobile-friendly websites for local businesses that need clear services, calls, directions, quote requests, and Google-ready SEO basics.",
+      icon: Briefcase,
+      link: "/small-business-websites-cleveland",
+      cta: "View Small Business Offer"
+    },
+    {
+      title: "Restaurant Websites",
+      description:
+        "Restaurant and food-service sites with menus, ordering links, hours, location details, event updates, and analytics for real customer actions.",
+      icon: Utensils,
+      link: "/restaurant-websites-cleveland",
+      cta: "View Restaurant Offer"
+    },
+    {
+      title: "Contractor Websites",
+      description:
+        "Lead-focused sites for contractors and service businesses with service-area pages, project galleries, quote forms, and click-to-call paths.",
+      icon: Wrench,
+      link: "/contractor-websites-cleveland",
+      cta: "View Contractor Offer"
+    }
+  ];
 
   const featuredApps = [
     {
@@ -31,6 +59,7 @@ const App = () => {
         "Privacy-focused Android app that blocks spam calls and texts. All processing happens on-device — no data uploaded to external servers.",
       features: ["Robocall Shield", "Personal Blocklist", "Area Code Blocking", "Whitelist Support", "100% On-Device Processing"],
       icon: Shield,
+      logo: `${process.env.PUBLIC_URL}/images/block-guard-logo.png`,
       color: "from-blue-500 to-cyan-500",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.radstormtech.blockguard&hl=en_US",
       websiteUrl: "https://www.blockguard.app/"
@@ -42,6 +71,7 @@ const App = () => {
         "Complete dog care organizer for walks, meals, medications, grooming, health records, and expenses. No account required — all data stays on your device.",
       features: ["Walk Tracker with Routes", "Medication Reminders", "Health Records", "Sitter Handoff Reports", "Local-First Privacy"],
       icon: Dog,
+      logo: `${process.env.PUBLIC_URL}/images/pupboard-logo.png`,
       color: "from-amber-500 to-orange-500",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.pupboard.app",
       websiteUrl: "https://pupboard.app/"
@@ -118,14 +148,14 @@ const App = () => {
       title: "Web Development",
       price: "Starts at $500",
       description:
-        "Custom-coded, high-performance websites. From single-page portfolios to multi-page business sites with SEO and CMS integration.",
+        "Custom-coded, high-performance websites for local businesses that need calls, bookings, orders, and quote requests.",
       icon: Layout,
       features: [
+        "Free 10-Minute Website Checkup",
         "Single Page: $500",
         "2-Page: $1,000",
         "3–5 Pages: $1,500–$2,500",
-        "Custom React/Tailwind Design",
-        "SEO & Mobile-First"
+        "SEO, Analytics & Mobile-First"
       ]
     },
     {
@@ -333,61 +363,105 @@ const App = () => {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            <p className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full border border-blue-400/40 bg-blue-500/10 text-blue-200 text-sm font-semibold">
+              <PhoneCall className="w-4 h-4" aria-hidden="true" />
+              Cleveland, Ohio web development
+            </p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Derek Gembus
+                Websites for small businesses that need calls, orders, and quote requests
               </span>
-              <span className="block text-2xl md:text-3xl mt-4 text-gray-300 font-normal">
-                Software Developer • Data Engineer • Web Developer
-              </span>
-              <span className="block text-lg md:text-xl mt-2 text-gray-400 font-normal">
-                Cleveland, Ohio
+              <span className="block text-xl md:text-2xl mt-5 text-gray-300 font-normal">
+                Built by Derek Gembus, a Cleveland web developer with live client sites, Android apps, analytics, and maintenance experience.
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto">
-              I build apps, websites, and data solutions that solve real problems.
-              From privacy-focused Android apps to client websites that drive revenue.
+              I help local businesses replace weak, outdated, or missing websites with fast pages, clear contact paths, Google-ready SEO basics, and simple monthly support.
             </p>
 
             {/* Dual CTA */}
             <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-8">
-              <a
-                href="#experience"
+              <Link
+                to="/quote"
+                state={{
+                  pkg: "Performance Optimization",
+                  note: "I would like a free 10-minute website checkup. My current website is: ______. The main thing I want more of is: calls / bookings / orders / quote requests."
+                }}
                 className="group min-w-[200px] px-8 py-4 rounded-xl border-2 border-blue-500 hover:bg-blue-500/20 transition-all transform hover:scale-105 font-semibold flex items-center justify-center gap-2"
               >
-                <Briefcase className="w-5 h-5" />
-                Hire Me
-                <span className="text-sm text-gray-400 group-hover:text-gray-300">→ Experience</span>
-              </a>
-              <a
-                href="#apps"
+                <Search className="w-5 h-5" />
+                Free Website Checkup
+                <span className="text-sm text-gray-400 group-hover:text-gray-300">Quick review</span>
+              </Link>
+              <Link
+                to="/small-business-websites-cleveland"
                 className="group min-w-[200px] px-8 py-4 rounded-xl bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 font-semibold flex items-center justify-center gap-2"
               >
                 <Users className="w-5 h-5" />
-                Work With Me
-                <span className="text-sm text-purple-200 group-hover:text-white">→ Projects</span>
-              </a>
+                Small Business Sites
+                <span className="text-sm text-purple-200 group-hover:text-white">Packages</span>
+              </Link>
             </div>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
-                to="/quote"
+                to="/services"
                 className="px-6 py-3 rounded-lg bg-gray-800/50 border border-gray-700 text-gray-300 hover:bg-gray-800 hover:border-purple-500/50 transition-all flex items-center justify-center gap-2"
               >
-                Get a Quote
+                View Pricing
               </Link>
-              <Link
-                to="/pay"
+              <a
+                href="#client-work"
                 className="px-6 py-3 rounded-lg bg-green-500/10 border border-green-500/50 text-green-400 hover:bg-green-500/20 transition-all flex items-center justify-center gap-2"
               >
-                Make a Payment
-              </Link>
+                See Client Work
+              </a>
             </div>
           </div>
         </div>
       </header>
 
       <main id="main-content" className="relative">
+
+        <section className="py-16 relative bg-gray-950" aria-labelledby="local-offers-heading">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center mb-10">
+              <h2
+                id="local-offers-heading"
+                className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
+              >
+                Website help for businesses that need customers to take action
+              </h2>
+              <p className="text-gray-400 text-lg">
+                Pick the path closest to your business. Each page shows what is included and sends the right details into the quote form.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {localWebsiteOffers.map((offer) => (
+                <Link
+                  key={offer.title}
+                  to={offer.link}
+                  className="group bg-gradient-to-br from-gray-900 to-black rounded-xl overflow-hidden border border-gray-800 hover:border-blue-500/60 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]"
+                >
+                  <div className="p-6 h-full flex flex-col">
+                    <div className="p-3 rounded-lg bg-blue-500/15 border border-blue-500/25 w-fit mb-4">
+                      <offer.icon className="w-6 h-6 text-blue-300" aria-hidden="true" />
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-200 transition-colors">
+                      {offer.title}
+                    </h3>
+                    <p className="text-gray-400 text-sm leading-relaxed flex-grow">{offer.description}</p>
+                    <div className="mt-5 inline-flex items-center gap-2 text-blue-300 text-sm font-semibold">
+                      {offer.cta}
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Featured Apps Section */}
         <section id="apps" className="py-20 relative" aria-labelledby="apps-heading">
@@ -414,8 +488,27 @@ const App = () => {
                   <div className="p-8">
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex items-center gap-4">
-                        <div className={`p-3 rounded-xl bg-gradient-to-br ${app.color} bg-opacity-20`}>
-                          <app.icon className="w-8 h-8 text-white" aria-hidden="true" />
+                        <div className={`p-1 rounded-2xl bg-gradient-to-br ${app.color} shrink-0`}>
+                          <img
+                            src={app.logo}
+                            alt={`${app.title} app icon`}
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                            className="w-16 h-16 rounded-xl block"
+                            onError={(e) => {
+                              e.currentTarget.style.display = 'none';
+                              const fallback = e.currentTarget.nextElementSibling;
+                              if (fallback) fallback.style.display = 'flex';
+                            }}
+                          />
+                          <div
+                            className="w-16 h-16 rounded-xl items-center justify-center"
+                            style={{ display: 'none' }}
+                            aria-hidden="true"
+                          >
+                            <app.icon className="w-8 h-8 text-white" />
+                          </div>
                         </div>
                         <div>
                           <h3 className="text-2xl font-bold text-white">{app.title}</h3>
@@ -676,6 +769,9 @@ const App = () => {
             >
               Services
             </h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto text-center mb-10">
+              Start with a small website, a quick fix, or monthly support. The goal is a clean path from visitor to call, order, booking, or quote request.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {services.map((service, index) => (
                 <div
@@ -798,19 +894,23 @@ const App = () => {
         {/* CTA */}
         <section className="py-20 relative bg-gray-950">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6 text-white">Ready to work together?</h2>
+            <h2 className="text-3xl font-bold mb-6 text-white">Want a quick website checkup?</h2>
             <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-              Whether you need a developer for your team or a partner for your next project, let's talk.
+              Send your current website and the action you want more customers to take. I will look for the fastest fixes first.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
                 to="/quote"
+                state={{
+                  pkg: "Performance Optimization",
+                  note: "I would like a free 10-minute website checkup. My current website is: ______. The main thing I want more of is: calls / bookings / orders / quote requests."
+                }}
                 className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105 font-semibold"
               >
-                Get a Quote
+                Request Website Checkup
               </Link>
               <a
-                href="https://www.linkedin.com/in/derek-gembus/"
+                href="https://www.linkedin.com/in/derekgembus/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 rounded-lg border border-gray-700 hover:border-purple-500/50 text-gray-300 hover:text-white transition-all transform hover:scale-105 font-semibold"

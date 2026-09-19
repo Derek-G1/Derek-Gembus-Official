@@ -7,6 +7,7 @@ import PrivacyPolicy from './PrivacyPolicy';
 import CookiePolicy from './CookiePolicy';
 import Payment from './Payment';
 import Services from './Services';
+import ServiceLandingPage from './ServiceLandingPage';
 import Quote from './Quote';
 import Terms from './Terms';
 import NotFound from './NotFound';
@@ -38,6 +39,9 @@ root.render(
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/small-business-websites-cleveland" element={<ServiceLandingPage type="smallBusiness" />} />
+          <Route path="/restaurant-websites-cleveland" element={<ServiceLandingPage type="restaurant" />} />
+          <Route path="/contractor-websites-cleveland" element={<ServiceLandingPage type="contractor" />} />
           <Route path="/quote" element={<Quote />} />
           
           
