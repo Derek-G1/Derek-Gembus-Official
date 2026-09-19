@@ -33,8 +33,12 @@ test('renders the portfolio header', () => {
       <App />
     </MemoryRouter>
   );
-  expect(screen.getByRole('heading', { name: /derek gembus/i })).toBeInTheDocument();
   expect(
-    screen.getByText(/software developer, data engineer & web developer based in cleveland, ohio/i)
+    screen.getByRole('heading', {
+      name: /websites for small businesses that need calls, orders, and quote requests/i,
+    })
+  ).toBeInTheDocument();
+  expect(
+    screen.getByText(/built by derek gembus, a cleveland web developer/i)
   ).toBeInTheDocument();
 });
